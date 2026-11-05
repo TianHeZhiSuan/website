@@ -508,25 +508,141 @@ body {
 .filter-bar button:hover { border-color: var(--sd-primary); color: var(--sd-primary); }
 .filter-bar button.on { background: var(--sd-primary); border-color: var(--sd-primary); color: #fff; box-shadow: 0 6px 16px rgba(50,125,249,.28); }
 
-.tbl-wrap { background: #fff; border-radius: var(--sd-radius-card); box-shadow: var(--sd-shadow-card); overflow: hidden; }
-.prod-table { width: 100%; font-size: .78rem; }
-.prod-table thead th {
-  background: #F1F5FB; color: var(--sd-text-primary); font-weight: 600; font-size: .8rem;
-  text-align: left; padding: .95rem 1rem; white-space: nowrap;
-  border-bottom: 1px solid rgba(37,102,210,.12);
+/* 五列（product.html：序号 / 型号 / 配置 / 计费 / 报价）
+   与四列（solution.html：序号 / 名称 / 内容 / 价格）共用同一套视觉 */
+.tbl-wrap {
+  background: #fff; border-radius: var(--sd-radius-card); overflow: hidden;
+  box-shadow: var(--sd-shadow-card); border: 1px solid rgba(50,125,249,.09);
 }
+.prod-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: .96rem; }
+
+/* 表头 */
+.prod-table thead th {
+  background: linear-gradient(180deg, #F1F6FF 0%, #E7EFFF 100%);
+  color: #2A3352; font-weight: 600; font-size: .92rem; letter-spacing: .05em;
+  text-align: left; padding: 1.05rem 1.15rem; white-space: nowrap;
+  border-bottom: 2px solid rgba(50,125,249,.2);
+}
+.prod-table thead .no { width: 4.6rem; }
 .prod-table thead .th-spec { width: 58%; }
-.prod-table tbody td { padding: 1rem; border-bottom: 1px solid rgba(37,102,210,.07); vertical-align: top; line-height: 1.8; }
-.prod-table tbody tr:hover td { background: #F7FAFF; }
-.prod-table tbody td.no { color: var(--sd-text-muted); font-size: .72rem; width: 3rem; }
-.prod-table tbody td.name { font-weight: 600; color: var(--sd-text-primary); width: 15%; }
-.prod-table tbody td.name small { display: block; font-weight: 400; color: var(--sd-text-muted); font-size: .68rem; margin-top: .15rem; }
-.prod-table tbody td.spec { color: var(--sd-text-body); font-size: .75rem; }
-.prod-table tbody td.spec span { display: block; color: #6d7385; }
-.prod-table tbody td.bill { width: 13%; color: var(--sd-text-body); font-size: .74rem; }
-.prod-table tbody td.bill .chip { margin-bottom: .3rem; }
+.prod-table thead .price-th { text-align: right; }
+
+/* 五列（含报价列）用固定布局，避免长型号被相邻列挤压重叠 */
+.prod-table--price { table-layout: fixed; }
+.prod-table--price thead .idx { width: 5%; }
+.prod-table--price thead .model-th { width: 21%; }
+.prod-table--price thead .spec-th { width: 44%; }
+.prod-table--price thead .bill-th { width: 9%; }
+.prod-table--price thead .price-th { width: 21%; }
+
+/* 行 */
+.prod-table tbody td {
+  padding: 1.25rem 1.15rem; border-bottom: 1px solid rgba(37,102,210,.07);
+  vertical-align: top; line-height: 1.72; color: #5A6177;
+}
+.prod-table tbody tr:nth-child(even) td { background: #FBFCFE; }
+.prod-table tbody tr:hover td { background: #F4F8FF; }
+.prod-table tbody tr:last-child td { border-bottom: 0; }
+
+/* 序号 */
+.prod-table tbody td.no,
+.prod-table tbody td.idx {
+  color: #A9B0C3; font-size: .88rem; font-weight: 600; width: 4.6rem;
+  letter-spacing: .05em; font-variant-numeric: tabular-nums;
+}
+
+/* 产品名 / 型号 */
+.prod-table tbody td.name,
+.prod-table tbody td.model { width: 23%; color: var(--sd-text-primary); padding-right: 1.6rem; }
+.prod-table tbody td.model { border-right: 1px solid rgba(37,102,210,.08); }
+.prod-table thead .model-th { border-right: 1px solid rgba(37,102,210,.08); }
+.prod-table tbody td.name { font-weight: 600; font-size: 1rem; }
+.prod-table tbody td.name small {
+  display: block; margin-top: .35rem; font-weight: 400;
+  font-size: .84rem; color: #8B93A7; letter-spacing: .02em;
+}
+.prod-table tbody td.model b {
+  display: block; font-size: .98rem; font-weight: 700;
+  line-height: 1.42; color: #232B45;
+}
+.prod-table tbody td.model em {
+  display: block; margin-top: .42rem; font-style: normal;
+  font-size: .82rem; color: #8B93A7; letter-spacing: .02em;
+  line-height: 1.5; overflow-wrap: anywhere;
+}
+
+/* 配置：标签 + 内容，长文本悬挂缩进 */
+.prod-table tbody td.spec { color: #5A6177; font-size: 1rem; }
+.prod-table tbody td.spec span { display: block; padding: .2rem 0; }
+.prod-table tbody td.spec span i {
+  display: inline-block; min-width: 4.2rem; margin-right: .7rem;
+  font-style: normal; font-size: .88rem; color: #9AA2B6; letter-spacing: .03em;
+  text-indent: 0;   /* 关键：避免继承 span 的负 text-indent 导致标签左移压到型号列 */
+}
+.prod-table tbody td.spec span:has(i) { padding-left: 4.9rem; text-indent: -4.9rem; }
+.prod-table tbody td.spec span.wide { padding-left: 4.9rem; text-indent: 0; }
+
+/* 计费模式 */
+.prod-table tbody td.bill { width: 10%; font-size: .96rem; }
+.prod-table tbody td.bill .chip {
+  margin: 0 .32rem .46rem 0; font-size: .84rem;
+  padding: .3rem .7rem; border-radius: 999px;
+}
+
+/* 报价 */
+.prod-table tbody td.price {
+  width: 15%; text-align: right; white-space: nowrap;
+  border-left: 1px solid rgba(37,102,210,.08);
+}
+.prod-table thead .price-th { border-left: 1px solid rgba(37,102,210,.08); }
+.prod-table tbody td.price .p-now {
+  display: block; font-size: 1.5rem; font-weight: 700; color: #1462F0;
+  line-height: 1.2; letter-spacing: -.01em; font-variant-numeric: tabular-nums;
+}
+.prod-table tbody td.price .p-now i {
+  font-style: normal; font-size: .82rem; font-weight: 500;
+  color: #8B93A7; margin-left: .28rem; letter-spacing: 0;
+}
+.prod-table tbody td.price .p-was {
+  display: block; margin-top: .5rem; font-size: .82rem;
+  color: #9AA2B6; letter-spacing: .01em;
+}
+.prod-table tbody td.price .p-was s { color: #B6BCCB; }
+.prod-table tbody td.price.ask .p-ask {
+  display: block; font-size: 1.16rem; font-weight: 600;
+  color: #9AA2B6; letter-spacing: .06em;
+}
+.prod-table tbody td.price.ask .p-was { margin-top: .36rem; }
+
 .prod-table tbody tr.hide { display: none; }
-.tbl-tip { margin-top: .9rem; font-size: .7rem; color: var(--sd-text-muted); }
+
+/* 报价前的重点提示 */
+.price-note {
+  display: flex; align-items: flex-start; gap: .8rem;
+  margin: 0 0 1rem; padding: 1rem 1.2rem;
+  background: linear-gradient(90deg, #FFF8E9 0%, #FFFDF7 72%);
+  border: 1px solid rgba(224,146,38,.26);
+  border-left: 3px solid #E8A33A;
+  border-radius: .7rem;
+}
+.price-note .pn-ico {
+  flex: 0 0 auto; width: 1.5rem; height: 1.5rem; margin-top: .16rem;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; background: #E8A33A; color: #fff;
+  font-size: .92rem; font-weight: 700; line-height: 1;
+}
+.price-note .pn-text {
+  margin: 0; font-size: .94rem; line-height: 1.75; color: #7A5C28;
+}
+.price-note .pn-text b { color: #A96A00; font-weight: 700; }
+.price-note .pn-text a {
+  color: #1462F0; font-weight: 700; text-decoration: none; white-space: nowrap;
+  border-bottom: 1px solid rgba(20,98,240,.28);
+}
+.price-note .pn-text a:hover { border-bottom-color: #1462F0; }
+.tbl-tip {
+  margin-top: 1.1rem; font-size: .84rem; color: #8B93A7; line-height: 1.85;
+}
 
 /* ---------- 15. Steps ---------- */
 .steps { display: flex; gap: 1.25rem; flex-wrap: wrap; }
@@ -672,7 +788,7 @@ body {
   .newsPown .w1560 { flex-wrap: wrap; gap: 1rem; }
   .pown_banner { display: none; }
   .tbl-wrap { overflow-x: auto; }
-  .prod-table { min-width: 720px; }
+  .prod-table { min-width: 900px; }
 }
 
 @media (max-width: 767px) {

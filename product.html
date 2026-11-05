@@ -237,159 +237,244 @@
         <button data-filter="storage">存储</button>
       </div>
 
-      <div class="tbl-wrap" id="gpu">
-        <table class="prod-table">
-          <thead>
-            <tr>
-              <th class="no">序号</th>
-              <th>产品 / 型号</th>
-              <th class="th-spec">配置</th>
-              <th>计费模式</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr data-cat="cpu" id="cpu">
-              <td class="no">01</td>
-              <td class="name">CPU 节点 / 3072G<small>X86-Intel Xeon Platinum 8260</small></td>
-              <td class="spec"><span>CPU：4× Intel Platinum 8260 2.4GHz 24Core</span><span>内存：3072GB
-                  DDR4</span><span>硬盘：2×480GB SSD · 2×7.68TB SSD · 4×3.84TB SSD</span></td>
-              <td class="bill"><span class="chip">按核时</span><span class="chip grey">包节点</span></td>
-            </tr>
-            <tr data-cat="cpu">
-              <td class="no">02</td>
-              <td class="name">CPU 节点 / 256G</td>
-              <td class="spec"><span>2 颗 Intel Xeon Platinum 8358P</span><span>单颗处理器 32 核 · 主频 2.6GHz</span></td>
-              <td class="bill"><span class="chip">按核时</span><span class="chip grey">包节点</span></td>
-            </tr>
-            <tr data-cat="cpu">
-              <td class="no">03</td>
-              <td class="name">X86-Intel Xeon Platinum 8358P<small>胖节点</small></td>
-              <td class="spec"><span>CPU：4× Intel Platinum 8260 2.4GHz 24Core</span><span>内存：3072GB
-                  DDR4</span><span>硬盘：2×480GB SSD · 2×7.68TB SSD · 4×3.84TB SSD</span></td>
-              <td class="bill"><span class="chip">按核时</span><span class="chip grey">包节点</span></td>
-            </tr>
-            <tr data-cat="cpu">
-              <td class="no">04</td>
-              <td class="name">CPU 节点 8358P</td>
-              <td class="spec"><span>2×32 物理核 2.6GHz Intel 志强铂金 X86</span><span>CPU 8358P ｜ 512GB 内存 ｜ 400G
-                  自主高速互联</span></td>
-              <td class="bill"><span class="chip">按核时</span><span class="chip grey">包节点</span></td>
-            </tr>
-
-            <tr data-cat="gpu">
-              <td class="no">05</td>
-              <td class="name">A100 80G<small>四卡 GPU 节点</small></td>
-              <td class="spec"><span>CPU：2× Intel Xeon Platinum 8350C 2.60GHz 48MB 32C/64T 240W</span><span>内存：32×32GB
-                  DDR4 3200MHz ECC/REG</span><span>SSD：2×960GB SATA 6Gb 2.5 寸</span><span>GPU：4× NVIDIA A100
-                  80GB</span><span>IB 网络：Mellanox HDR IB 200Gb/s</span></td>
-              <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
-            </tr>
-            <tr data-cat="gpu">
-              <td class="no">06</td>
-              <td class="name">A800 nvlink 80G<small>4 卡整机</small></td>
-              <td class="spec"><span>CPU：2 颗 Intel Xeon Platinum 8358P，单颗 32 核、主频 2.6GHz</span><span>内存：1024GB
-                  DDR4</span><span>硬盘：2×480GB SSD · 4×3.84TB SSD</span><span>网络：200Gb/s RoCE 高速网卡</span></td>
-              <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
-            </tr>
-            <tr data-cat="gpu">
-              <td class="no">07</td>
-              <td class="name">标准型 A800 GPU 集群<small>A800 Pcie 80G</small></td>
-              <td class="spec"><span>2×28 物理核 2.6GHz Intel 志强金牌</span><span>CPU 1024GB 内存 ｜ 8× Nvidia A800 80G
-                  显存</span><span>Pcie 互联 ｜ 超算 Lustre 高性能分布式存储按需分配，全局总容量不低于 1PB</span></td>
-              <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
-            </tr>
-            <tr data-cat="gpu">
-              <td class="no">08</td>
-              <td class="name">H100 GPU 集群<small>H100 Nvlink 80G</small></td>
-              <td class="spec"><span>2×32 物理核 2.8GHz Intel 至强 8462Y+ CPU ｜ 2048GB 内存</span><span>8× Nvidia H100 80G 显存
-                  Nvlink</span><span>超算 Lustre 高性能分布式存储按需分配，全局总容量不低于 1PB</span></td>
-              <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
-            </tr>
-            <tr data-cat="gpu">
-              <td class="no">09</td>
-              <td class="name">A100 八卡智算云服务器<small>8 卡整机 · vGPU 共享</small></td>
-              <td class="spec"><span>每台 GPU 云服务器配置 8 张智算卡</span><span>单卡 80GB：TF32=156 TFLOPS，FP16=312 TFLOPS（不支持
-                  FP8）</span><span>卡间互联带宽 600GB/s；支持容器间 vGPU 共享与算力强隔离</span><span>内网带宽 96Gbps；128 核 vCPU + 2048GB
-                  内存</span><span>3.84TB 本地 SSD 硬盘 4 块</span></td>
-              <td class="bill"><span class="chip grey">整机包月</span></td>
-            </tr>
-            <tr data-cat="gpu">
-              <td class="no">10</td>
-              <td class="name">高端型 A100 GPU 集群<small>A100 Nvlink 80G</small></td>
-              <td class="spec"><span>2×32 物理核 2.1GHz Intel 志强金牌</span><span>CPU 1024GB 内存 ｜ 8× Nvidia A100 80G
-                  显存</span><span>Nvlink ｜ 超算 Lustre 高性能分布式存储按需分配，全局总容量不低于 1PB</span></td>
-              <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
-            </tr>
-            <tr data-cat="gpu">
-              <td class="no">11</td>
-              <td class="name">标准型 V100 GPU 集群<small>V100 Pcie</small></td>
-              <td class="spec"><span>Pcie 互联</span><span>超算 Lustre 高性能分布式存储容量按需分配</span></td>
-              <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
-            </tr>
-            <tr data-cat="gpu">
-              <td class="no">12</td>
-              <td class="name">H20 nvlink 接口<small>8 卡整机 · vGPU 共享</small></td>
-              <td class="spec"><span>每台配置 8 张智算卡，单卡 96GB：TF32=74 TFLOPS，FP16=148 TFLOPS，FP8=296
-                  TFLOPS</span><span>卡间互联带宽 900GB/s；最高包转发率 3600 万 pps</span><span>内网带宽 100Gbps；192 核 vCPU + 2048GB
-                  内存</span><span>3.84TB 本地 SSD 硬盘 4 块</span></td>
-              <td class="bill"><span class="chip grey">整机包月</span></td>
-            </tr>
-
-            <tr data-cat="ws" id="ws">
-              <td class="no">13</td>
-              <td class="name">4090 - 液冷 10 卡<small>Intel 8473C · PCIe 5.0</small></td>
-              <td class="spec"><span>CPU：2× 第四代英特尔 至强 8473C，52 核 104 线程，2.1 满载 3.1 睿频 3.8</span><span>内存：16×64GB DDR5 共
-                  1TB；系统盘 2×960GB SATA（RAID1）；数据盘 1×7.68TB U.2</span><span>网卡：25Gb 双网口；电源：CRPS 3200W 热拔插（2+2
-                  冗余）</span><span>GPU：10× RTX 4090 24GB（16× 全速）；主板支持 PCIE 5.0</span></td>
-              <td class="bill"><span class="chip grey">整机包月</span></td>
-            </tr>
-            <tr data-cat="ws">
-              <td class="no">14</td>
-              <td class="name">5090 - 液冷 8 卡<small>Intel 8473C · PCIe 5.0</small></td>
-              <td class="spec"><span>CPU：2× 英特尔 8473C 52 核 104 线程（2.1 满载 3.1 睿频 3.8）</span><span>内存：16×64GB DDR5 共
-                  1TB；系统盘 2×960GB SATA（RAID1）</span><span>数据盘 7.68TB×2（选配最多 4 块）；网卡 400G×1 + 100G×2，PCIe 5.0
-                  Switch×1</span><span>电源：CRPS 3200W 热拔插（2+2 冗余）；GPU：8× RTX 5090（16× 全速）</span></td>
-              <td class="bill"><span class="chip grey">整机包月</span></td>
-            </tr>
-            <tr data-cat="ws">
-              <td class="no">15</td>
-              <td class="name">5880 - 液冷 8 卡<small>可加 vGPU 授权</small></td>
-              <td class="spec"><span>CPU：2× 英特尔 8473C 52 核 104 线程（2.1 满载 3.1 睿频 3.8）</span><span>内存：16×64GB DDR5 共
-                  1TB；系统盘 2×960GB SATA（RAID1）</span><span>数据盘 7.68TB×2（选配最多 4 块）；网卡 200G×1 + 100G×2，PCIe 4.0
-                  Switch×1</span><span>电源：CRPS 3200W 热拔插（1+1 冗余）；GPU：8× RTX 5880（16× 全速，可加 vGPU 授权）</span></td>
-              <td class="bill"><span class="chip grey">整机包月</span></td>
-            </tr>
-
-            <tr data-cat="visual">
-              <td class="no">16</td>
-              <td class="name">标准型可视化 GPU 云图站</td>
-              <td class="spec"><span>核数：12 vCPU ｜ 内存：52GB ｜ 存储：200G</span><span>显卡：GeForce RTX 3090+1 ｜
-                  双算力加速低延时云</span><span>超算 Zocean 高性能分布式存储容量按需分配，全局可分配容量不低于 500TB</span></td>
-              <td class="bill"><span class="chip grey">整机包月</span></td>
-            </tr>
-            <tr data-cat="storage" id="storage">
-              <td class="no">17</td>
-              <td class="name">Zocean 高性能分布式存储</td>
-              <td class="spec"><span>可视化专用 SSD 存续</span><span>按需分配容量，适配云图站与可视化业务</span></td>
-              <td class="bill"><span class="chip grey">整机包月</span></td>
-            </tr>
-            <tr data-cat="storage">
-              <td class="no">18</td>
-              <td class="name">高性能分布式存储</td>
-              <td class="spec"><span>Lustre 并行文件系统</span><span>高带宽、高 IOPS，适配大模型训练与海量数据读写</span></td>
-              <td class="bill"><span class="chip grey">整机包月</span></td>
-            </tr>
-            <tr data-cat="visual">
-              <td class="no">19</td>
-              <td class="name">高端型可视化 GPU 云图站</td>
-              <td class="spec"><span>核数：12 vCPU ｜ 内存：52GB ｜ 存储：200G</span><span>显卡：GeForce RTX 3090+1 ｜
-                  双算力加速低延时云</span><span>超算 Zocean 高性能分布式存储容量按需分配，全局可分配容量不低于 500TB</span></td>
-              <td class="bill"><span class="chip grey">整机包月</span></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="price-note">
+        <span class="pn-ico">!</span>
+        <p class="pn-text">
+          <b>价格与资源随市场供需变化，以下报价仅供参考，最终以签约合同为准。</b> 有意向请电话或微信联系我们：
+          <a href="tel:15371045775">153 7104 5775</a>、<a href="tel:13590152498">135 9015 2498</a>（微信同号）。
+        </p>
       </div>
-      <p class="tbl-tip">* 以上配置来自当前可用资源清单，实际交付以合同与技术方案确认的规格为准；集群存储容量按需分配，全局总容量不低于标注值。</p>
+
+      <div class="tbl-wrap" id="gpu">
+        <table class="prod-table prod-table--price">
+  <thead>
+    <tr>
+      <th class="idx">序号</th>
+      <th class="model-th">产品 / 型号</th>
+      <th class="spec-th">配置</th>
+      <th class="bill-th">计费模式</th>
+      <th class="price-th">参考报价</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-cat="cpu" id="cpu">
+      <td class="idx">01</td>
+      <td class="model"><b>CPU 节点 / 3072G</b><em>X86-Intel Xeon Platinum 8260</em></td>
+      <td class="spec">
+        <span><i>CPU</i>4× Intel Platinum 8260 2.4GHz 24Core</span>
+        <span><i>内存</i>3072GB DDR4</span>
+        <span><i>硬盘</i>2×480GB SSD · 2×7.68TB SSD · 4×3.84TB SSD</span>
+      </td>
+      <td class="bill"><span class="chip">按核时</span><span class="chip grey">包节点</span></td>
+      <td class="price"><b class="p-now">0.07<i>元/核时</i></b><span class="p-was">标准价 <s>0.10 元/核时</s></span></td>
+    </tr>
+    <tr data-cat="cpu">
+      <td class="idx">02</td>
+      <td class="model"><b>CPU 节点 / 256G</b></td>
+      <td class="spec">
+        <span class="wide">2 颗 Intel Xeon Platinum 8358P</span>
+        <span class="wide">单颗处理器 32 核 · 主频 2.6GHz</span>
+      </td>
+      <td class="bill"><span class="chip">按核时</span><span class="chip grey">包节点</span></td>
+      <td class="price"><b class="p-now">0.05<i>元/核时</i></b><span class="p-was">标准价 <s>0.07 元/核时</s></span></td>
+    </tr>
+    <tr data-cat="cpu">
+      <td class="idx">03</td>
+      <td class="model"><b>X86-Intel Xeon Platinum 8358P</b><em>胖节点</em></td>
+      <td class="spec">
+        <span><i>CPU</i>4× Intel Platinum 8260 2.4GHz 24Core</span>
+        <span><i>内存</i>3072GB DDR4</span>
+        <span><i>硬盘</i>2×480GB SSD · 2×7.68TB SSD · 4×3.84TB SSD</span>
+      </td>
+      <td class="bill"><span class="chip">按核时</span><span class="chip grey">包节点</span></td>
+      <td class="price ask"><b class="p-ask">询价</b><span class="p-was">按配置与周期核定</span></td>
+    </tr>
+    <tr data-cat="cpu">
+      <td class="idx">04</td>
+      <td class="model"><b>CPU 节点 8358P</b></td>
+      <td class="spec">
+        <span class="wide">2×32 物理核 2.6GHz Intel 志强铂金 X86</span>
+        <span class="wide">CPU 8358P ｜ 512GB 内存 ｜ 400G 自主高速互联</span>
+      </td>
+      <td class="bill"><span class="chip">按核时</span><span class="chip grey">包节点</span></td>
+      <td class="price"><b class="p-now">0.06<i>元/核时</i></b><span class="p-was">标准价 <s>0.10 元/核时</s></span></td>
+    </tr>
+    <tr data-cat="gpu">
+      <td class="idx">05</td>
+      <td class="model"><b>A100 80G</b><em>四卡 GPU 节点</em></td>
+      <td class="spec">
+        <span><i>CPU</i>2× Intel Xeon Platinum 8350C 2.60GHz 48MB 32C/64T 240W</span>
+        <span><i>内存</i>32×32GB DDR4 3200MHz ECC/REG</span>
+        <span><i>SSD</i>2×960GB SATA 6Gb 2.5 寸</span>
+        <span><i>GPU</i>4× NVIDIA A100 80GB</span>
+        <span><i>IB 网络</i>Mellanox HDR IB 200Gb/s</span>
+      </td>
+      <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
+      <td class="price ask"><b class="p-ask">询价</b><span class="p-was">按配置与周期核定</span></td>
+    </tr>
+    <tr data-cat="gpu">
+      <td class="idx">06</td>
+      <td class="model"><b>A800 nvlink 80G</b><em>4 卡整机</em></td>
+      <td class="spec">
+        <span><i>CPU</i>2 颗 Intel Xeon Platinum 8358P，单颗 32 核、主频 2.6GHz</span>
+        <span><i>内存</i>1024GB DDR4</span>
+        <span><i>硬盘</i>2×480GB SSD · 4×3.84TB SSD</span>
+        <span><i>网络</i>200Gb/s RoCE 高速网卡</span>
+      </td>
+      <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
+      <td class="price"><b class="p-now">6<i>元/卡时</i></b><span class="p-was">标准价 <s>6.8 元/卡时</s></span></td>
+    </tr>
+    <tr data-cat="gpu">
+      <td class="idx">07</td>
+      <td class="model"><b>标准型 A800 GPU 集群</b><em>A800 Pcie 80G</em></td>
+      <td class="spec">
+        <span class="wide">2×28 物理核 2.6GHz Intel 志强金牌</span>
+        <span class="wide">CPU 1024GB 内存 ｜ 8× Nvidia A800 80G 显存</span>
+        <span class="wide">Pcie 互联 ｜ 超算 Lustre 高性能分布式存储按需分配，全局总容量不低于 1PB</span>
+      </td>
+      <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
+      <td class="price"><b class="p-now">5<i>元/卡时</i></b><span class="p-was">标准价 <s>8 元/卡时</s></span></td>
+    </tr>
+    <tr data-cat="gpu">
+      <td class="idx">08</td>
+      <td class="model"><b>H100 GPU 集群</b><em>H100 Nvlink 80G</em></td>
+      <td class="spec">
+        <span class="wide">2×32 物理核 2.8GHz Intel 至强 8462Y+ CPU ｜ 2048GB 内存</span>
+        <span class="wide">8× Nvidia H100 80G 显存 Nvlink</span>
+        <span class="wide">超算 Lustre 高性能分布式存储按需分配，全局总容量不低于 1PB</span>
+      </td>
+      <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
+      <td class="price"><b class="p-now">14<i>元/卡时</i></b><span class="p-was">标准价 <s>20 元/卡时</s></span></td>
+    </tr>
+    <tr data-cat="gpu">
+      <td class="idx">09</td>
+      <td class="model"><b>A100 八卡智算云服务器</b><em>8 卡整机 · vGPU 共享</em></td>
+      <td class="spec">
+        <span class="wide">每台 GPU 云服务器配置 8 张智算卡</span>
+        <span class="wide">单卡 80GB：TF32=156 TFLOPS，FP16=312 TFLOPS（不支持 FP8）</span>
+        <span class="wide">卡间互联带宽 600GB/s；支持容器间 vGPU 共享与算力强隔离</span>
+        <span class="wide">内网带宽 96Gbps；128 核 vCPU + 2048GB 内存</span>
+        <span class="wide">3.84TB 本地 SSD 硬盘 4 块</span>
+      </td>
+      <td class="bill"><span class="chip grey">整机包月</span></td>
+      <td class="price"><b class="p-now">3.7<i>万元/月</i></b></td>
+    </tr>
+    <tr data-cat="gpu">
+      <td class="idx">10</td>
+      <td class="model"><b>高端型 A100 GPU 集群</b><em>A100 Nvlink 80G</em></td>
+      <td class="spec">
+        <span class="wide">2×32 物理核 2.1GHz Intel 志强金牌</span>
+        <span class="wide">CPU 1024GB 内存 ｜ 8× Nvidia A100 80G 显存</span>
+        <span class="wide">Nvlink ｜ 超算 Lustre 高性能分布式存储按需分配，全局总容量不低于 1PB</span>
+      </td>
+      <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
+      <td class="price"><b class="p-now">7<i>元/卡时</i></b><span class="p-was">标准价 <s>10 元/卡时</s></span></td>
+    </tr>
+    <tr data-cat="gpu">
+      <td class="idx">11</td>
+      <td class="model"><b>标准型 V100 GPU 集群</b><em>V100 Pcie</em></td>
+      <td class="spec">
+        <span class="wide">Pcie 互联</span>
+        <span class="wide">超算 Lustre 高性能分布式存储容量按需分配</span>
+      </td>
+      <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
+      <td class="price"><b class="p-now">2.8<i>元/卡时</i></b><span class="p-was">标准价 <s>4 元/卡时</s></span></td>
+    </tr>
+    <tr data-cat="gpu">
+      <td class="idx">12</td>
+      <td class="model"><b>H20 nvlink 接口</b><em>8 卡整机 · vGPU 共享</em></td>
+      <td class="spec">
+        <span class="wide">每台配置 8 张智算卡，单卡 96GB：TF32=74 TFLOPS，FP16=148 TFLOPS，FP8=296 TFLOPS</span>
+        <span class="wide">卡间互联带宽 900GB/s；最高包转发率 3600 万 pps</span>
+        <span class="wide">内网带宽 100Gbps；192 核 vCPU + 2048GB 内存</span>
+        <span class="wide">3.84TB 本地 SSD 硬盘 4 块</span>
+      </td>
+      <td class="bill"><span class="chip grey">整机包月</span></td>
+      <td class="price ask"><b class="p-ask">询价</b><span class="p-was">按配置与周期核定</span></td>
+    </tr>
+    <tr data-cat="ws" id="ws">
+      <td class="idx">13</td>
+      <td class="model"><b>4090 - 液冷 10 卡</b><em>Intel 8473C · PCIe 5.0</em></td>
+      <td class="spec">
+        <span><i>CPU</i>2× 第四代英特尔 至强 8473C，52 核 104 线程，2.1 满载 3.1 睿频 3.8</span>
+        <span><i>内存</i>16×64GB DDR5 共 1TB；系统盘 2×960GB SATA（RAID1）；数据盘 1×7.68TB U.2</span>
+        <span><i>网卡</i>25Gb 双网口；电源：CRPS 3200W 热拔插（2+2 冗余）</span>
+        <span><i>GPU</i>10× RTX 4090 24GB（16× 全速）；主板支持 PCIE 5.0</span>
+      </td>
+      <td class="bill"><span class="chip grey">整机包月</span></td>
+      <td class="price ask"><b class="p-ask">询价</b><span class="p-was">按配置与周期核定</span></td>
+    </tr>
+    <tr data-cat="ws">
+      <td class="idx">14</td>
+      <td class="model"><b>5090 - 液冷 8 卡</b><em>Intel 8473C · PCIe 5.0</em></td>
+      <td class="spec">
+        <span><i>CPU</i>2× 英特尔 8473C 52 核 104 线程（2.1 满载 3.1 睿频 3.8）</span>
+        <span><i>内存</i>16×64GB DDR5 共 1TB；系统盘 2×960GB SATA（RAID1）</span>
+        <span class="wide">数据盘 7.68TB×2（选配最多 4 块）；网卡 400G×1 + 100G×2，PCIe 5.0 Switch×1</span>
+        <span><i>电源</i>CRPS 3200W 热拔插（2+2 冗余）；GPU：8× RTX 5090（16× 全速）</span>
+      </td>
+      <td class="bill"><span class="chip grey">整机包月</span></td>
+      <td class="price ask"><b class="p-ask">询价</b><span class="p-was">按配置与周期核定</span></td>
+    </tr>
+    <tr data-cat="ws">
+      <td class="idx">15</td>
+      <td class="model"><b>5880 - 液冷 8 卡</b><em>可加 vGPU 授权</em></td>
+      <td class="spec">
+        <span><i>CPU</i>2× 英特尔 8473C 52 核 104 线程（2.1 满载 3.1 睿频 3.8）</span>
+        <span><i>内存</i>16×64GB DDR5 共 1TB；系统盘 2×960GB SATA（RAID1）</span>
+        <span class="wide">数据盘 7.68TB×2（选配最多 4 块）；网卡 200G×1 + 100G×2，PCIe 4.0 Switch×1</span>
+        <span><i>电源</i>CRPS 3200W 热拔插（1+1 冗余）；GPU：8× RTX 5880（16× 全速，可加 vGPU 授权）</span>
+      </td>
+      <td class="bill"><span class="chip grey">整机包月</span></td>
+      <td class="price ask"><b class="p-ask">询价</b><span class="p-was">按配置与周期核定</span></td>
+    </tr>
+    <tr data-cat="visual">
+      <td class="idx">16</td>
+      <td class="model"><b>标准型可视化 GPU 云图站</b></td>
+      <td class="spec">
+        <span><i>核数</i>12 vCPU ｜ 内存：52GB ｜ 存储：200G</span>
+        <span><i>显卡</i>GeForce RTX 3090+1 ｜ 双算力加速低延时云</span>
+        <span class="wide">超算 Zocean 高性能分布式存储容量按需分配，全局可分配容量不低于 500TB</span>
+      </td>
+      <td class="bill"><span class="chip grey">整机包月</span></td>
+      <td class="price"><b class="p-now">2,500<i>元/台/月</i></b></td>
+    </tr>
+    <tr data-cat="storage" id="storage">
+      <td class="idx">17</td>
+      <td class="model"><b>Zocean 高性能分布式存储</b></td>
+      <td class="spec">
+        <span class="wide">可视化专用 SSD 存续</span>
+        <span class="wide">按需分配容量，适配云图站与可视化业务</span>
+      </td>
+      <td class="bill"><span class="chip grey">整机包月</span></td>
+      <td class="price"><b class="p-now">3,000<i>元/TB/月</i></b></td>
+    </tr>
+    <tr data-cat="storage">
+      <td class="idx">18</td>
+      <td class="model"><b>高性能分布式存储</b></td>
+      <td class="spec">
+        <span class="wide">Lustre 并行文件系统</span>
+        <span class="wide">高带宽、高 IOPS，适配大模型训练与海量数据读写</span>
+      </td>
+      <td class="bill"><span class="chip grey">整机包月</span></td>
+      <td class="price"><b class="p-now">1,800<i>元/TB/月</i></b></td>
+    </tr>
+    <tr data-cat="visual">
+      <td class="idx">19</td>
+      <td class="model"><b>高端型可视化 GPU 云图站</b></td>
+      <td class="spec">
+        <span><i>核数</i>12 vCPU ｜ 内存：52GB ｜ 存储：200G</span>
+        <span><i>显卡</i>GeForce RTX 3090+1 ｜ 双算力加速低延时云</span>
+        <span class="wide">超算 Zocean 高性能分布式存储容量按需分配，全局可分配容量不低于 500TB</span>
+      </td>
+      <td class="bill"><span class="chip grey">整机包月</span></td>
+      <td class="price ask"><b class="p-ask">询价</b><span class="p-was">按配置与周期核定</span></td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <p class="tbl-tip">* 报价中「折扣价」为当前公开优惠价，「标准价」为对外指导价；标注「询价」的规格需按实际配置、数量与租期单独核定。
+        价格随资源供需调整，最终以技术方案与合同为准。以上配置来自当前可用资源清单，实际交付以合同与技术方案确认的规格为准；集群存储容量按需分配，全局总容量不低于标注值。</p>
     </div>
   </section>
 
