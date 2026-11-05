@@ -1,458 +1,570 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>深圳天河智算科技有限公司 — 国家级超算资源服务商 | 超算 · 智算 · AI 算力</title>
-<meta name="description" content="深圳天河智算科技有限公司是国家超级计算深圳中心官方授权销售代理商，由国防科大超算、智算与人工智能团队组建，整合五大国家级超算中心资源，提供 H100/A800/A100 等企业级算力、软硬一体性能优化、全托管运维与定制化平台开发服务。">
-<meta name="keywords" content="天河智算,深圳超算,国家超级计算深圳中心,H100,A800,A100,算力租赁,超算服务,灵晟,大模型训练">
-<link rel="icon" href="assets/img/logo.png">
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>深圳天河智算科技有限公司 — 国家级超算资源服务商 | 超算 · 智算 · AI 算力</title>
+  <meta name="description"
+    content="深圳天河智算科技有限公司是国家超级计算深圳中心官方授权销售代理商，由国防科大超算、智算与人工智能团队组建，整合五大国家级超算中心资源，提供 H100/A800/A100 等企业级算力、软硬一体性能优化、全托管运维与定制化平台开发服务。">
+  <meta name="keywords" content="天河智算,深圳超算,国家超级计算深圳中心,H100,A800,A100,算力租赁,超算服务,灵晟,大模型训练">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<!-- ================= HEADER ================= -->
-<header class="header" id="header">
-  <div class="w1560">
-    <a href="index.html" class="logo">
-      <img class="logo-light" src="assets/img/logo_white.png" alt="天河智算 THZS">
-      <img class="logo-dark" src="assets/img/logo.png" alt="天河智算 THZS">
-    </a>
-
-    <ul class="nav1">
-      <li class="on"><a href="index.html">首页</a></li>
-      <li data-dropdown="product"><a href="product.html">算力产品 <span class="dropdown-arrow"></span></a></li>
-      <li data-dropdown="solution"><a href="solution.html">解决方案 <span class="dropdown-arrow"></span></a></li>
-      <li><a href="cases.html">典型案例</a></li>
-      <li><a href="about.html">关于我们</a></li>
-    </ul>
-
-    <div class="header-actions">
-      <a href="about.html#contact" class="h_btn">联系我们</a>
-      <button class="nav-toggle" aria-label="打开菜单"><span></span></button>
-    </div>
-  </div>
-
-  <!-- 下拉：算力产品 -->
-  <div class="product_down_bg" id="dropBg"></div>
-  <div class="newsPown" id="productDown">
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
     <div class="w1560">
-      <div class="pown_col" style="width:24vw">
-        <div class="h1">算力产品</div>
-        <a href="product.html#gpu" class="pown_item">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><rect x="7" y="9" width="4" height="4" rx="1"/><rect x="13" y="9" width="4" height="4" rx="1"/><path d="M7 19v2M17 19v2M7 3v2M17 3v2"/></svg></div>
-          <div class="txt"><b>GPU 智算集群</b><span>H100 / A800 / A100 / H20 / RTX 4090 · 5090</span></div>
-        </a>
-        <a href="product.html#cpu" class="pown_item">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9zM4 10h-2M4 14h-2M22 10h-2M22 14h-2M10 4v-2M14 4v-2M10 22v-2M14 22v-2"/></svg></div>
-          <div class="txt"><b>CPU 计算节点</b><span>Platinum 8260 / 8358P 胖节点 · 按核时计费</span></div>
-        </a>
-        <a href="supercomputing.html" class="pown_item">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><path d="M12 3l8 4v6c0 4.5-3.4 7.8-8 9-4.6-1.2-8-4.5-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
-          <div class="txt"><b>深圳超算中心资源</b><span>灵晟 E 级国产超算 · x86 工业计算分区</span></div>
-        </a>
-        <a href="product.html#storage" class="pown_item">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
-          <div class="txt"><b>存储与网络</b><span>Lustre / Zocean 并行存储 · RDMA 高速互联</span></div>
-        </a>
-      </div>
+      <a href="index.html" class="logo">
+        <img class="logo-light" src="assets/img/logo_white.png" alt="天河智算 THZS">
+        <img class="logo-dark" src="assets/img/logo.png" alt="天河智算 THZS">
+      </a>
 
-      <div class="pown_col" style="width:22vw">
-        <div class="h1">按场景选型</div>
-        <div class="pown_links">
-          <a href="solution.html#scene"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><circle cx="8" cy="8" r="6"/><path d="M8 2v12M2 8h12"/></svg>大模型训练与微调</a>
-          <a href="solution.html#scene"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M2 12l4-5 3 3 5-7"/><path d="M2 14h12"/></svg>科学计算与工程仿真</a>
-          <a href="solution.html#scene"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><rect x="2" y="3" width="12" height="10" rx="1.5"/><path d="M2 6h12"/></svg>三维渲染与数字创意</a>
-          <a href="solution.html#scene"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M8 2l6 3v4c0 4-3 6-6 7-6-3-6-5-6-7V5z"/></svg>国产化适配与性能优化</a>
+      <ul class="nav1">
+        <li class="on"><a href="index.html">首页</a></li>
+        <li data-dropdown="product"><a href="product.html">算力产品 <span class="dropdown-arrow"></span></a></li>
+        <li data-dropdown="solution"><a href="solution.html">解决方案 <span class="dropdown-arrow"></span></a></li>
+        <li><a href="cases.html">典型案例</a></li>
+        <li><a href="about.html">关于我们</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <a href="about.html#contact" class="h_btn">联系我们</a>
+        <button class="nav-toggle" aria-label="打开菜单"><span></span></button>
+      </div>
+    </div>
+
+    <!-- 下拉：算力产品 -->
+    <div class="product_down_bg" id="dropBg"></div>
+    <div class="newsPown" id="productDown">
+      <div class="w1560">
+        <div class="pown_col" style="width:24vw">
+          <div class="h1">算力产品</div>
+          <a href="product.html#gpu" class="pown_item">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <rect x="7" y="9" width="4" height="4" rx="1" />
+                <rect x="13" y="9" width="4" height="4" rx="1" />
+                <path d="M7 19v2M17 19v2M7 3v2M17 3v2" />
+              </svg></div>
+            <div class="txt"><b>GPU 智算集群</b><span>H100 / A800 / A100 / H20 / RTX 4090 · 5090</span></div>
+          </a>
+          <a href="product.html#cpu" class="pown_item">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8">
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <path d="M9 9h6v6H9zM4 10h-2M4 14h-2M22 10h-2M22 14h-2M10 4v-2M14 4v-2M10 22v-2M14 22v-2" />
+              </svg></div>
+            <div class="txt"><b>CPU 计算节点</b><span>Platinum 8260 / 8358P 胖节点 · 按核时计费</span></div>
+          </a>
+          <a href="supercomputing.html" class="pown_item">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8">
+                <path d="M12 3l8 4v6c0 4.5-3.4 7.8-8 9-4.6-1.2-8-4.5-8-9V7z" />
+                <path d="M9 12l2 2 4-4" />
+              </svg></div>
+            <div class="txt"><b>深圳超算中心资源</b><span>灵晟 E 级国产超算 · x86 工业计算分区</span></div>
+          </a>
+          <a href="product.html#storage" class="pown_item">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8">
+                <ellipse cx="12" cy="6" rx="8" ry="3" />
+                <path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6" />
+                <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
+              </svg></div>
+            <div class="txt"><b>存储与网络</b><span>Lustre / Zocean 并行存储 · RDMA 高速互联</span></div>
+          </a>
+        </div>
+
+        <div class="pown_col" style="width:22vw">
+          <div class="h1">按场景选型</div>
+          <div class="pown_links">
+            <a href="solution.html#scene"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6">
+                <circle cx="8" cy="8" r="6" />
+                <path d="M8 2v12M2 8h12" />
+              </svg>大模型训练与微调</a>
+            <a href="solution.html#scene"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6">
+                <path d="M2 12l4-5 3 3 5-7" />
+                <path d="M2 14h12" />
+              </svg>科学计算与工程仿真</a>
+            <a href="solution.html#scene"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6">
+                <rect x="2" y="3" width="12" height="10" rx="1.5" />
+                <path d="M2 6h12" />
+              </svg>三维渲染与数字创意</a>
+            <a href="solution.html#scene"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6">
+                <path d="M8 2l6 3v4c0 4-3 6-6 7-6-3-6-5-6-7V5z" />
+              </svg>国产化适配与性能优化</a>
+          </div>
+        </div>
+
+        <div class="pown_col" style="width:16vw">
+          <div class="h1">服务支持</div>
+          <div class="pown_links">
+            <a href="product.html"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6">
+                <path d="M3 3h10v10H3z" />
+                <path d="M6 6h4M6 9h4" />
+              </svg>算力产品清单</a>
+            <a href="solution.html"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6">
+                <path d="M2 8h3l2-4 3 8 2-4h2" />
+              </svg>技术服务明细</a>
+            <a href="about.html#cred"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6">
+                <circle cx="8" cy="6" r="3.2" />
+                <path d="M5.4 8.6L4 14l4-2 4 2-1.4-5.4" />
+              </svg>资质与授权</a>
+          </div>
+        </div>
+
+        <div class="pown_banner">
+          <div class="k">COMPUTING POWER</div>
+          <div class="t">19 款企业级算力规格<br>按卡时 / 核时精细计费</div>
+          <a href="product.html" class="btn">查看清单</a>
         </div>
       </div>
+    </div>
 
-      <div class="pown_col" style="width:16vw">
-        <div class="h1">服务支持</div>
-        <div class="pown_links">
-          <a href="product.html"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M3 3h10v10H3z"/><path d="M6 6h4M6 9h4"/></svg>算力产品清单</a>
-          <a href="solution.html"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M2 8h3l2-4 3 8 2-4h2"/></svg>技术服务明细</a>
-          <a href="about.html#cred"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><circle cx="8" cy="6" r="3.2"/><path d="M5.4 8.6L4 14l4-2 4 2-1.4-5.4"/></svg>资质与授权</a>
+    <!-- 下拉：解决方案 -->
+    <div class="newsPown" id="solutionDown">
+      <div class="w1560">
+        <div class="pown_col" style="width:24vw">
+          <div class="h1">解决方案</div>
+          <a href="solution.html#svc" class="pown_item">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8">
+                <path d="M4 7h16M4 12h10M4 17h13" />
+                <circle cx="18" cy="12" r="2" />
+              </svg></div>
+            <div class="txt"><b>软件系统定制</b><span>量身定制技术框架，构建业务软件系统</span></div>
+          </a>
+          <a href="solution.html#svc" class="pown_item">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8">
+                <path d="M13 2L3 14h8l-1 8 10-12h-7z" />
+              </svg></div>
+            <div class="txt"><b>应用性能优化</b><span>并行化算法设计与软件并行版本开发</span></div>
+          </a>
+          <a href="solution.html#svc" class="pown_item">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8">
+                <path d="M6 17a4 4 0 010-8 5 5 0 019.5-1.5A4 4 0 0118 17z" />
+                <path d="M12 13v6M9 16l3 3 3-3" />
+              </svg></div>
+            <div class="txt"><b>超算云与 IT 开发</b><span>云上完整 HPC 环境，前后台一体化开发</span></div>
+          </a>
+          <a href="solution.html#svc" class="pown_item">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8">
+                <path d="M3 12h4l2-5 4 10 2-5h6" />
+                <circle cx="12" cy="12" r="9" stroke-dasharray="2 3" />
+              </svg></div>
+            <div class="txt"><b>运维与监控</b><span>整机柜运维、作业监控、故障诊断与定位</span></div>
+          </a>
+        </div>
+
+        <div class="pown_col" style="width:18vw">
+          <div class="h1">技术服务</div>
+          <div class="pown_links">
+            <a href="solution.html#svc"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6">
+                <rect x="2.5" y="3" width="11" height="10" rx="1.5" />
+                <path d="M5 7l2 2-2 2M9 11h2" />
+              </svg>软件环境搭建</a>
+            <a href="solution.html#svc"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6">
+                <path d="M2 11h3l2-5 3 8 2-3h2" />
+              </svg>作业监控</a>
+            <a href="solution.html#svc"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6">
+                <circle cx="7" cy="7" r="4" />
+                <path d="M10 10l4 4" />
+              </svg>运行问题排查</a>
+            <a href="solution.html#svc"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6">
+                <path d="M3 13V6l5-3 5 3v7" />
+                <path d="M6.5 13v-3h3V13" />
+              </svg>定制化平台</a>
+          </div>
+        </div>
+
+        <div class="pown_col" style="width:16vw">
+          <div class="h1">服务流程</div>
+          <div class="pown_links">
+            <a href="solution.html#flow"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6">
+                <circle cx="3" cy="8" r="1.6" />
+                <circle cx="8" cy="8" r="1.6" />
+                <circle cx="13" cy="8" r="1.6" />
+              </svg>需求沟通与方案</a>
+            <a href="solution.html#flow"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6">
+                <path d="M3 13V3M3 13h10" />
+                <path d="M3 10l4-4 3 3 3-4" />
+              </svg>开通与环境迁移</a>
+            <a href="solution.html#flow"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6">
+                <path d="M2 8a6 6 0 1112 0 6 6 0 01-12 0z" />
+                <path d="M8 5v3l2 2" />
+              </svg>运行与持续优化</a>
+          </div>
+        </div>
+
+        <div class="pown_banner">
+          <div class="k">FREE TRIAL</div>
+          <div class="t">免费试用账号<br>与一对一技术咨询</div>
+          <a href="tel:15371045775" class="btn">申请试用</a>
         </div>
       </div>
+    </div>
+  </header>
 
-      <div class="pown_banner">
-        <div class="k">COMPUTING POWER</div>
-        <div class="t">19 款企业级算力规格<br>按卡时 / 核时精细计费</div>
-        <a href="product.html" class="btn">查看清单</a>
-      </div>
+  <!-- 移动端菜单 -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mm-close" aria-label="关闭">×</button>
+    <a href="index.html">首页 <span>HOME</span></a>
+    <a href="product.html">算力产品 <span>PRODUCTS</span></a>
+    <a href="supercomputing.html">深圳超算中心资源 <span>SZSC</span></a>
+    <a href="solution.html">解决方案 <span>SOLUTIONS</span></a>
+    <a href="cases.html">典型案例 <span>CASES</span></a>
+    <a href="about.html">关于我们 <span>ABOUT</span></a>
+    <a href="about.html#contact">联系我们 <span>CONTACT</span></a>
+    <div class="mm-foot">
+      <a href="tel:13590152498" class="btn blue" style="justify-content:center">获取算力报价</a>
     </div>
   </div>
 
-  <!-- 下拉：解决方案 -->
-  <div class="newsPown" id="solutionDown">
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <span class="orb a"></span><span class="orb b"></span><span class="orb c"></span>
     <div class="w1560">
-      <div class="pown_col" style="width:24vw">
-        <div class="h1">解决方案</div>
-        <a href="solution.html#svc" class="pown_item">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><path d="M4 7h16M4 12h10M4 17h13"/><circle cx="18" cy="12" r="2"/></svg></div>
-          <div class="txt"><b>软件系统定制</b><span>量身定制技术框架，构建业务软件系统</span></div>
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="hero-eyebrow"><i></i> 国家超级计算深圳中心 · 官方授权销售代理商</div>
+          <h1>以国家级超算之力<br>驱动 <em>AI 时代算力</em></h1>
+          <p class="hero-sub">
+            天河智算由国防科大超算、智算与人工智能团队组建，整合 <strong>五大国家级超算中心</strong> 资源，
+            为企业与科研客户提供 <strong>H100 / A800 / A100</strong> 等企业级智算集群，
+            以及灵晟 E 级国产超算资源，配套软硬一体性能优化与全托管运维。
+          </p>
+          <div class="hero-actions">
+            <a href="tel:13590152498" class="btn blue">获取算力方案</a>
+            <a href="product.html" class="btn ghost-light">查看算力产品 →</a>
+          </div>
+          <ul class="hero-meta">
+            <li><b>5<small>大</small></b>国家级超算中心资源</li>
+            <li><b>19<small>款</small></b>企业级算力规格</li>
+            <li><b>24<small>H</small></b>技术支持在线</li>
+            <li><b>0<small>超售</small></b>资源独占·稳定调度</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="res-panel">
+            <div class="rp-head">
+              <h3>算力规格速览</h3>
+              <span>企业级 · 无超售</span>
+            </div>
+            <div class="res-row">
+              <div class="n">H100 NVLink 80G<small>2×32 核 2.8GHz ｜ 2048GB ｜ Lustre ≥1PB</small></div>
+              <div class="tag2">按卡时 · 包月</div>
+            </div>
+            <div class="res-row">
+              <div class="n">A800 NVLink 80G × 8<small>2×28 核 ｜ 1024GB ｜ RoCE 200Gb/s</small></div>
+              <div class="tag2">按卡时 · 包月</div>
+            </div>
+            <div class="res-row">
+              <div class="n">灵晟 · 鲲鹏 920F 国产超算<small>304 核 × 2 / 节点 ｜ 23,552 节点 ｜ TOP500 榜首</small></div>
+              <div class="tag2">按核时</div>
+            </div>
+            <div class="res-row">
+              <div class="n">RTX 4090 24G × 10 液冷<small>2×52 核 ｜ 1TB DDR5 ｜ PCIe 5.0</small></div>
+              <div class="tag2">整机包月</div>
+            </div>
+            <div class="res-row">
+              <div class="n">Lustre / Zocean 并行存储<small>高带宽 · 高 IOPS ｜ 免费 1TB 起</small></div>
+              <div class="tag2">按需分配</div>
+            </div>
+            <div class="rp-foot">
+              <span>按核时 / 卡时计量，提交作业即计费</span>
+              <a href="product.html">全部规格 →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 数据条 ================= -->
+  <section class="stat-strip">
+    <div class="w1560">
+      <div class="list-row">
+        <div class="stat-card">
+          <div class="num">5<small>大</small></div>
+          <div class="lbl">国家级超算中心</div>
+          <div class="note">资源整合 · 统一调度</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">19<small>款</small></div>
+          <div class="lbl">企业级算力规格</div>
+          <div class="note">GPU / CPU / 存储 / 可视化</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">72<small>亿元</small></div>
+          <div class="lbl">超算二期硬件投入</div>
+          <div class="note">企业级设备 · 不计成本</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">3<small>年</small></div>
+          <div class="lbl">官方授权代理周期</div>
+          <div class="note">2024.07 – 2027.07</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 核心优势 ================= -->
+  <section class="section">
+    <div class="w1560">
+      <div class="sec-head">
+        <div class="sec-eyebrow">Why TianHeZhiSuan</div>
+        <div class="title"><span>为什么选择天河智算</span></div>
+        <p class="sec-desc">从硬件底座、技术能力到合规资质，天河智算提供的是国家级超算体系下的完整算力服务，而不只是一块可租用的显卡。</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="adv-card card reveal">
+          <div class="num-mark">01</div>
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7">
+              <path d="M4 20V8l8-4 8 4v12" />
+              <path d="M9 20v-6h6v6" />
+              <path d="M2 20h20" />
+            </svg></div>
+          <h3>资源：背靠国家级超算体系</h3>
+          <p>背靠五大国家级超算中心，可整合一流超算、智算资源与人才智力资源。超算中心以服务国家战略为首任，硬件投入不计成本——深圳超算二期一次性硬件投入即达 <strong>72
+              亿元</strong>，远超一般商业公司总资产规模。</p>
+          <div class="tags"><span class="chip">五大超算中心</span><span class="chip">企业级硬件</span></div>
+        </article>
+
+        <article class="adv-card card reveal">
+          <div class="num-mark">02</div>
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7">
+              <circle cx="9" cy="8" r="3" />
+              <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
+              <path d="M16 8.5a3 3 0 010 5.8M18.5 20c0-2.6-1-4.6-2.5-5.6" />
+            </svg></div>
+          <h3>人才：国防科大系技术班底</h3>
+          <p>技术团队主要来自国防科大、华为、腾讯等超算、智算与人工智能团队，具备扎实的算力设计、建设与运维能力；管理及营销团队来自证券、银行、IT 头部企业，兼具技术深度与市场运营能力。</p>
+          <div class="tags"><span class="chip">国防科大</span><span class="chip">华为 / 腾讯</span></div>
+        </article>
+
+        <article class="adv-card card reveal">
+          <div class="num-mark">03</div>
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7">
+              <path d="M7 7L3 12l4 5" />
+              <path d="M17 7l4 5-4 5" />
+              <path d="M14 5l-4 14" />
+            </svg></div>
+          <h3>技术：软硬一体性能优化</h3>
+          <p>
+            具备面向国产体系结构的算力性能自动优化能力，覆盖程序并行化算法设计、编译优化、集群适配与作业调优，让同等硬件预算产出更高有效算力。该技术项目获第五届深圳市退役军人创新创业大赛新兴产业赛道<strong>二等奖</strong>。
+          </p>
+          <div class="tags"><span class="chip orange">产业化获奖</span><span class="chip">并行优化</span></div>
+        </article>
+
+        <article class="adv-card card reveal">
+          <div class="num-mark">04</div>
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7">
+              <path d="M12 3l7 3.2v5.4c0 4.6-3 8-7 9.4-4-1.4-7-4.8-7-9.4V6.2z" />
+              <path d="M9 12l2 2 4-4" />
+            </svg></div>
+          <h3>合规：科研级安全等级</h3>
+          <p>具备国家超算资质与完善合规体系：HPC 提供 VPN
+            终端接入，云服务配备堡垒机与备份设备，电子政务云平台通过三级等保。数据物理不出中心，权限严格隔离，并可为课题、论文配套出具<strong>官方算力证明</strong>。</p>
+          <div class="tags"><span class="chip green">三级等保</span><span class="chip green">数据不出中心</span></div>
+        </article>
+
+        <article class="adv-card card reveal">
+          <div class="num-mark">05</div>
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7">
+              <rect x="3" y="4" width="18" height="12" rx="2" />
+              <path d="M8 20h8M12 16v4" />
+              <path d="M7 10l2 2 4-4" />
+            </svg></div>
+          <h3>体验：开箱即用的接入方式</h3>
+          <p>免费提供试用账号与技术咨询，支持 Web、FTP、命令行终端等多种访问方式，配套常用文件上传下载工具。免费提供 <strong>1TB 存储</strong>，海量数据可协助邮寄硬盘挂盘导入，免去长周期数据上传。
+          </p>
+          <div class="tags"><span class="chip">免费试用</span><span class="chip">免费 1TB</span></div>
+        </article>
+
+        <article class="adv-card card reveal">
+          <div class="num-mark">06</div>
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7">
+              <path d="M4 18V9M10 18V5M16 18v-6M22 18v-9" />
+              <path d="M2 21h20" />
+            </svg></div>
+          <h3>成本：细粒度计费更省钱</h3>
+          <p>支持按核时、按卡时、包节点、节点包年多种计费模式。GPU
+            按作业<strong>实际运行量</strong>计费，而非按资源占用起算；资源紧张时可先提交作业排队，无需先行抢占节点，大规模任务成本显著低于主流商用租用平台。</p>
+          <div class="tags"><span class="chip">按卡时计费</span><span class="chip">先排队后计费</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 业务板块入口 ================= -->
+  <section class="section light">
+    <div class="w1560">
+      <div class="sec-head">
+        <div class="sec-eyebrow">Explore</div>
+        <div class="title"><span>按板块深入了解</span></div>
+        <p class="sec-desc">官网按内容拆分为独立页面：算力规格、超算资源、技术服务、真实案例与公司资质，各自完整，互不堆叠。</p>
+      </div>
+
+      <div class="grid-4">
+        <a href="product.html" class="entry-card reveal">
+          <div class="et-top">
+            <div class="ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <rect x="7" y="9" width="4" height="4" rx="1" />
+                <rect x="13" y="9" width="4" height="4" rx="1" />
+              </svg></div>
+            <h3>算力产品</h3>
+          </div>
+          <div class="et-num">19 款规格 · 4 种计费</div>
+          <p>H100 / A800 / A100 / H20 全高端 GPU，Platinum 8260 与 8358P CPU 节点，液冷工作站、可视化云图站与并行存储，附计费与网络说明。</p>
+          <div class="et-foot"><span>GPU · CPU · 存储</span><em>查看清单 →</em></div>
         </a>
-        <a href="solution.html#svc" class="pown_item">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><path d="M13 2L3 14h8l-1 8 10-12h-7z"/></svg></div>
-          <div class="txt"><b>应用性能优化</b><span>并行化算法设计与软件并行版本开发</span></div>
+
+        <a href="supercomputing.html" class="entry-card reveal">
+          <div class="et-top">
+            <div class="ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8">
+                <path d="M12 3l8 4v6c0 4.5-3.4 7.8-8 9-4.6-1.2-8-4.5-8-9V7z" />
+                <path d="M9 12l2 2 4-4" />
+              </svg></div>
+            <h3>深圳超算中心资源</h3>
+          </div>
+          <div class="et-num">2.198 EFlops · 双分区</div>
+          <p>灵晟分区以鲲鹏 920F 纯 CPU 同构登顶 TOP500；工业计算分区以 Xeon Gold 6458Q 高主频支撑工业软件生态，两区互补。</p>
+          <div class="et-foot"><span>灵晟 · 工业计算</span><em>查看分区 →</em></div>
         </a>
-        <a href="solution.html#svc" class="pown_item">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><path d="M6 17a4 4 0 010-8 5 5 0 019.5-1.5A4 4 0 0118 17z"/><path d="M12 13v6M9 16l3 3 3-3"/></svg></div>
-          <div class="txt"><b>超算云与 IT 开发</b><span>云上完整 HPC 环境，前后台一体化开发</span></div>
+
+        <a href="solution.html" class="entry-card reveal">
+          <div class="et-top">
+            <div class="ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8">
+                <path d="M4 7h16M4 12h10M4 17h13" />
+                <circle cx="18" cy="12" r="2" />
+              </svg></div>
+            <h3>解决方案</h3>
+          </div>
+          <div class="et-num">4 大能力 · 9 项服务</div>
+          <p>高性能计算技术支持、软件系统定制、国产化并行优化、超算云与 IT 开发，附九项服务参考价与六大行业场景、五步上线流程。</p>
+          <div class="et-foot"><span>技术服务 · 价格</span><em>查看方案 →</em></div>
         </a>
-        <a href="solution.html#svc" class="pown_item">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><path d="M3 12h4l2-5 4 10 2-5h6"/><circle cx="12" cy="12" r="9" stroke-dasharray="2 3"/></svg></div>
-          <div class="txt"><b>运维与监控</b><span>整机柜运维、作业监控、故障诊断与定位</span></div>
+
+        <a href="cases.html" class="entry-card reveal">
+          <div class="et-top">
+            <div class="ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8">
+                <path d="M4 19V7l6-3 6 3v12" />
+                <path d="M16 19v-6l5 2v4" />
+                <path d="M2 21h20" />
+              </svg></div>
+            <h3>典型案例</h3>
+          </div>
+          <div class="et-num">6 个项目 · 客户墙</div>
+          <p>气象大模型训练、三维动漫渲染、分子动力学与基因测序、流场数值模拟、材料电子结构计算、道路桥梁抗震仿真。</p>
+          <div class="et-foot"><span>高校 · 军工 · 企业</span><em>查看案例 →</em></div>
         </a>
       </div>
+    </div>
+  </section>
 
-      <div class="pown_col" style="width:18vw">
-        <div class="h1">技术服务</div>
-        <div class="pown_links">
-          <a href="solution.html#svc"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><rect x="2.5" y="3" width="11" height="10" rx="1.5"/><path d="M5 7l2 2-2 2M9 11h2"/></svg>软件环境搭建</a>
-          <a href="solution.html#svc"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M2 11h3l2-5 3 8 2-3h2"/></svg>作业监控</a>
-          <a href="solution.html#svc"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><circle cx="7" cy="7" r="4"/><path d="M10 10l4 4"/></svg>运行问题排查</a>
-          <a href="solution.html#svc"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M3 13V6l5-3 5 3v7"/><path d="M6.5 13v-3h3V13"/></svg>定制化平台</a>
-        </div>
+  <!-- ================= 信任与资质 ================= -->
+  <section class="section">
+    <div class="w1560">
+      <div class="sec-head">
+        <div class="sec-eyebrow">Trust</div>
+        <div class="title"><span>资质与信任基础</span></div>
       </div>
-
-      <div class="pown_col" style="width:16vw">
-        <div class="h1">服务流程</div>
-        <div class="pown_links">
-          <a href="solution.html#flow"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><circle cx="3" cy="8" r="1.6"/><circle cx="8" cy="8" r="1.6"/><circle cx="13" cy="8" r="1.6"/></svg>需求沟通与方案</a>
-          <a href="solution.html#flow"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M3 13V3M3 13h10"/><path d="M3 10l4-4 3 3 3-4"/></svg>开通与环境迁移</a>
-          <a href="solution.html#flow"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M2 8a6 6 0 1112 0 6 6 0 01-12 0z"/><path d="M8 5v3l2 2"/></svg>运行与持续优化</a>
-        </div>
-      </div>
-
-      <div class="pown_banner">
-        <div class="k">FREE TRIAL</div>
-        <div class="t">免费试用账号<br>与一对一技术咨询</div>
-        <a href="tel:13974865556" class="btn">申请试用</a>
+      <div class="trust reveal">
+        <div class="it"><i></i><b>国家超级计算深圳中心</b> 官方授权销售代理商（2024.07–2027.07）</div>
+        <div class="it"><i></i><b>第五届深圳市退役军人创新创业大赛</b> 新兴产业赛道二等奖</div>
+        <div class="it"><i></i><b>三级等保</b> · 数据物理不出中心</div>
+        <div class="it"><i></i><b>五大国家级超算中心</b> 资源直连</div>
+        <a href="about.html#cred" class="more">查看证书 →</a>
       </div>
     </div>
-  </div>
-</header>
+  </section>
 
-<!-- 移动端菜单 -->
-<div class="mobile-menu" id="mobileMenu">
-  <button class="mm-close" aria-label="关闭">×</button>
-  <a href="index.html">首页 <span>HOME</span></a>
-  <a href="product.html">算力产品 <span>PRODUCTS</span></a>
-  <a href="supercomputing.html">深圳超算中心资源 <span>SZSC</span></a>
-  <a href="solution.html">解决方案 <span>SOLUTIONS</span></a>
-  <a href="cases.html">典型案例 <span>CASES</span></a>
-  <a href="about.html">关于我们 <span>ABOUT</span></a>
-  <a href="about.html#contact">联系我们 <span>CONTACT</span></a>
-  <div class="mm-foot">
-    <a href="tel:13590152498" class="btn blue" style="justify-content:center">获取算力报价</a>
-  </div>
-</div>
-
-<!-- ================= HERO ================= -->
-<section class="hero">
-  <span class="orb a"></span><span class="orb b"></span><span class="orb c"></span>
-  <div class="w1560">
-    <div class="hero-grid">
-      <div class="hero-left">
-        <div class="hero-eyebrow"><i></i> 国家超级计算深圳中心 · 官方授权销售代理商</div>
-        <h1>以国家级超算之力<br>驱动 <em>AI 时代算力</em></h1>
-        <p class="hero-sub">
-          天河智算由国防科大超算、智算与人工智能团队组建，整合 <strong>五大国家级超算中心</strong> 资源，
-          为企业与科研客户提供 <strong>H100 / A800 / A100</strong> 等企业级智算集群，
-          以及灵晟 E 级国产超算资源，配套软硬一体性能优化与全托管运维。
-        </p>
-        <div class="hero-actions">
-          <a href="tel:13590152498" class="btn blue">获取算力方案</a>
-          <a href="product.html" class="btn ghost-light">查看算力产品 →</a>
+  <!-- ================= CTA ================= -->
+  <section class="section tight">
+    <div class="w1560">
+      <div class="cta reveal">
+        <div class="cta-txt">
+          <h2>让算力，成为你的竞争力</h2>
+          <p>免费试用账号 · 一对一算力方案 · 按实际用量计费 · 配套官方算力证明</p>
         </div>
-        <ul class="hero-meta">
-          <li><b>5<small>大</small></b>国家级超算中心资源</li>
-          <li><b>19<small>款</small></b>企业级算力规格</li>
-          <li><b>24<small>H</small></b>技术支持在线</li>
-          <li><b>0<small>超售</small></b>资源独占·稳定调度</li>
-        </ul>
+        <div class="cta-actions">
+          <a href="tel:13590152498" class="btn white">立即咨询 153 7104 5775</a>
+          <a href="about.html#contact" class="btn ghost-light">查看联系方式</a>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="hero-right">
-        <div class="res-panel">
-          <div class="rp-head">
-            <h3>算力规格速览</h3>
-            <span>企业级 · 无超售</span>
-          </div>
-          <div class="res-row">
-            <div class="n">H100 NVLink 80G<small>2×32 核 2.8GHz ｜ 2048GB ｜ Lustre ≥1PB</small></div>
-            <div class="tag2">按卡时 · 包月</div>
-          </div>
-          <div class="res-row">
-            <div class="n">A800 NVLink 80G × 8<small>2×28 核 ｜ 1024GB ｜ RoCE 200Gb/s</small></div>
-            <div class="tag2">按卡时 · 包月</div>
-          </div>
-          <div class="res-row">
-            <div class="n">灵晟 · 鲲鹏 920F 国产超算<small>304 核 × 2 / 节点 ｜ 23,552 节点 ｜ TOP500 榜首</small></div>
-            <div class="tag2">按核时</div>
-          </div>
-          <div class="res-row">
-            <div class="n">RTX 4090 24G × 10 液冷<small>2×52 核 ｜ 1TB DDR5 ｜ PCIe 5.0</small></div>
-            <div class="tag2">整机包月</div>
-          </div>
-          <div class="res-row">
-            <div class="n">Lustre / Zocean 并行存储<small>高带宽 · 高 IOPS ｜ 免费 1TB 起</small></div>
-            <div class="tag2">按需分配</div>
-          </div>
-          <div class="rp-foot">
-            <span>按核时 / 卡时计量，提交作业即计费</span>
-            <a href="product.html">全部规格 →</a>
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="w1560">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="fl"><img src="assets/img/logo_white.png" alt="天河智算"></div>
+          <p>深圳天河智算科技有限公司由国防科大超算、智算与人工智能团队组建，依托五大国家级超算中心资源，为 AI 时代提供超算 / 智算服务、私有大模型技术、产品及应用系统开发服务。</p>
+          <div class="slogan">梦 / 想 / 起 / 航 &nbsp;&nbsp; 携 / 手 / 共 / 赢</div>
+        </div>
+
+        <div class="footer-col">
+          <h4>算力产品</h4>
+          <ul>
+            <li><a href="product.html#gpu">GPU 智算集群</a></li>
+            <li><a href="product.html#cpu">CPU 计算节点</a></li>
+            <li><a href="supercomputing.html">深圳超算中心资源</a></li>
+            <li><a href="product.html#ws">液冷工作站</a></li>
+            <li><a href="product.html#storage">存储与网络</a></li>
+            <li><a href="product.html#billing">计费模式</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>解决方案</h4>
+          <ul>
+            <li><a href="solution.html#svc">软件系统定制</a></li>
+            <li><a href="solution.html#svc">应用性能优化</a></li>
+            <li><a href="solution.html#svc">超算云与 IT 开发</a></li>
+            <li><a href="solution.html#svc">运维与监控</a></li>
+            <li><a href="solution.html#scene">行业场景</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>关于我们</h4>
+          <ul>
+            <li><a href="about.html">公司简介</a></li>
+            <li><a href="about.html#cred">资质与荣誉</a></li>
+            <li><a href="cases.html">典型案例</a></li>
+            <li><a href="about.html#contact">联系我们</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col" style="flex:1.3">
+          <h4>联系我们</h4>
+          <div class="fs">
+            电话：135 9015 2498 / 139 7486 5556<br>
+            地址：深圳市龙华区民治街道大岭社区<br>
+            梅龙路与中梅路交汇处光浩国际中心 A 座 6-S
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- ================= 数据条 ================= -->
-<section class="stat-strip">
-  <div class="w1560">
-    <div class="list-row">
-      <div class="stat-card">
-        <div class="num">5<small>大</small></div>
-        <div class="lbl">国家级超算中心</div>
-        <div class="note">资源整合 · 统一调度</div>
-      </div>
-      <div class="stat-card">
-        <div class="num">19<small>款</small></div>
-        <div class="lbl">企业级算力规格</div>
-        <div class="note">GPU / CPU / 存储 / 可视化</div>
-      </div>
-      <div class="stat-card">
-        <div class="num">72<small>亿元</small></div>
-        <div class="lbl">超算二期硬件投入</div>
-        <div class="note">企业级设备 · 不计成本</div>
-      </div>
-      <div class="stat-card">
-        <div class="num">3<small>年</small></div>
-        <div class="lbl">官方授权代理周期</div>
-        <div class="note">2024.07 – 2027.07</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 核心优势 ================= -->
-<section class="section">
-  <div class="w1560">
-    <div class="sec-head">
-      <div class="sec-eyebrow">Why TianHeZhiSuan</div>
-      <div class="title"><span>为什么选择天河智算</span></div>
-      <p class="sec-desc">从硬件底座、技术能力到合规资质，天河智算提供的是国家级超算体系下的完整算力服务，而不只是一块可租用的显卡。</p>
-    </div>
-
-    <div class="grid-3">
-      <article class="adv-card card reveal">
-        <div class="num-mark">01</div>
-        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M4 20V8l8-4 8 4v12"/><path d="M9 20v-6h6v6"/><path d="M2 20h20"/></svg></div>
-        <h3>资源：背靠国家级超算体系</h3>
-        <p>背靠五大国家级超算中心，可整合一流超算、智算资源与人才智力资源。超算中心以服务国家战略为首任，硬件投入不计成本——深圳超算二期一次性硬件投入即达 <strong>72 亿元</strong>，远超一般商业公司总资产规模。</p>
-        <div class="tags"><span class="chip">五大超算中心</span><span class="chip">企业级硬件</span></div>
-      </article>
-
-      <article class="adv-card card reveal">
-        <div class="num-mark">02</div>
-        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 8.5a3 3 0 010 5.8M18.5 20c0-2.6-1-4.6-2.5-5.6"/></svg></div>
-        <h3>人才：国防科大系技术班底</h3>
-        <p>技术团队主要来自国防科大、华为、腾讯等超算、智算与人工智能团队，具备扎实的算力设计、建设与运维能力；管理及营销团队来自证券、银行、IT 头部企业，兼具技术深度与市场运营能力。</p>
-        <div class="tags"><span class="chip">国防科大</span><span class="chip">华为 / 腾讯</span></div>
-      </article>
-
-      <article class="adv-card card reveal">
-        <div class="num-mark">03</div>
-        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M7 7L3 12l4 5"/><path d="M17 7l4 5-4 5"/><path d="M14 5l-4 14"/></svg></div>
-        <h3>技术：软硬一体性能优化</h3>
-        <p>具备面向国产体系结构的算力性能自动优化能力，覆盖程序并行化算法设计、编译优化、集群适配与作业调优，让同等硬件预算产出更高有效算力。该技术项目获第五届深圳市退役军人创新创业大赛新兴产业赛道<strong>二等奖</strong>。</p>
-        <div class="tags"><span class="chip orange">产业化获奖</span><span class="chip">并行优化</span></div>
-      </article>
-
-      <article class="adv-card card reveal">
-        <div class="num-mark">04</div>
-        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M12 3l7 3.2v5.4c0 4.6-3 8-7 9.4-4-1.4-7-4.8-7-9.4V6.2z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <h3>合规：科研级安全等级</h3>
-        <p>具备国家超算资质与完善合规体系：HPC 提供 VPN 终端接入，云服务配备堡垒机与备份设备，电子政务云平台通过三级等保。数据物理不出中心，权限严格隔离，并可为课题、论文配套出具<strong>官方算力证明</strong>。</p>
-        <div class="tags"><span class="chip green">三级等保</span><span class="chip green">数据不出中心</span></div>
-      </article>
-
-      <article class="adv-card card reveal">
-        <div class="num-mark">05</div>
-        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><path d="M7 10l2 2 4-4"/></svg></div>
-        <h3>体验：开箱即用的接入方式</h3>
-        <p>免费提供试用账号与技术咨询，支持 Web、FTP、命令行终端等多种访问方式，配套常用文件上传下载工具。免费提供 <strong>1TB 存储</strong>，海量数据可协助邮寄硬盘挂盘导入，免去长周期数据上传。</p>
-        <div class="tags"><span class="chip">免费试用</span><span class="chip">免费 1TB</span></div>
-      </article>
-
-      <article class="adv-card card reveal">
-        <div class="num-mark">06</div>
-        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M4 18V9M10 18V5M16 18v-6M22 18v-9"/><path d="M2 21h20"/></svg></div>
-        <h3>成本：细粒度计费更省钱</h3>
-        <p>支持按核时、按卡时、包节点、节点包年多种计费模式。GPU 按作业<strong>实际运行量</strong>计费，而非按资源占用起算；资源紧张时可先提交作业排队，无需先行抢占节点，大规模任务成本显著低于主流商用租用平台。</p>
-        <div class="tags"><span class="chip">按卡时计费</span><span class="chip">先排队后计费</span></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 业务板块入口 ================= -->
-<section class="section light">
-  <div class="w1560">
-    <div class="sec-head">
-      <div class="sec-eyebrow">Explore</div>
-      <div class="title"><span>按板块深入了解</span></div>
-      <p class="sec-desc">官网按内容拆分为独立页面：算力规格、超算资源、技术服务、真实案例与公司资质，各自完整，互不堆叠。</p>
-    </div>
-
-    <div class="grid-4">
-      <a href="product.html" class="entry-card reveal">
-        <div class="et-top">
-          <div class="ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><rect x="7" y="9" width="4" height="4" rx="1"/><rect x="13" y="9" width="4" height="4" rx="1"/></svg></div>
-          <h3>算力产品</h3>
-        </div>
-        <div class="et-num">19 款规格 · 4 种计费</div>
-        <p>H100 / A800 / A100 / H20 全高端 GPU，Platinum 8260 与 8358P CPU 节点，液冷工作站、可视化云图站与并行存储，附计费与网络说明。</p>
-        <div class="et-foot"><span>GPU · CPU · 存储</span><em>查看清单 →</em></div>
-      </a>
-
-      <a href="supercomputing.html" class="entry-card reveal">
-        <div class="et-top">
-          <div class="ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><path d="M12 3l8 4v6c0 4.5-3.4 7.8-8 9-4.6-1.2-8-4.5-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
-          <h3>深圳超算中心资源</h3>
-        </div>
-        <div class="et-num">2.198 EFlops · 双分区</div>
-        <p>灵晟分区以鲲鹏 920F 纯 CPU 同构登顶 TOP500；工业计算分区以 Xeon Gold 6458Q 高主频支撑工业软件生态，两区互补。</p>
-        <div class="et-foot"><span>灵晟 · 工业计算</span><em>查看分区 →</em></div>
-      </a>
-
-      <a href="solution.html" class="entry-card reveal">
-        <div class="et-top">
-          <div class="ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><path d="M4 7h16M4 12h10M4 17h13"/><circle cx="18" cy="12" r="2"/></svg></div>
-          <h3>解决方案</h3>
-        </div>
-        <div class="et-num">4 大能力 · 9 项服务</div>
-        <p>高性能计算技术支持、软件系统定制、国产化并行优化、超算云与 IT 开发，附九项服务参考价与六大行业场景、五步上线流程。</p>
-        <div class="et-foot"><span>技术服务 · 价格</span><em>查看方案 →</em></div>
-      </a>
-
-      <a href="cases.html" class="entry-card reveal">
-        <div class="et-top">
-          <div class="ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><path d="M4 19V7l6-3 6 3v12"/><path d="M16 19v-6l5 2v4"/><path d="M2 21h20"/></svg></div>
-          <h3>典型案例</h3>
-        </div>
-        <div class="et-num">6 个项目 · 客户墙</div>
-        <p>气象大模型训练、三维动漫渲染、分子动力学与基因测序、流场数值模拟、材料电子结构计算、道路桥梁抗震仿真。</p>
-        <div class="et-foot"><span>高校 · 军工 · 企业</span><em>查看案例 →</em></div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 信任与资质 ================= -->
-<section class="section">
-  <div class="w1560">
-    <div class="sec-head">
-      <div class="sec-eyebrow">Trust</div>
-      <div class="title"><span>资质与信任基础</span></div>
-    </div>
-    <div class="trust reveal">
-      <div class="it"><i></i><b>国家超级计算深圳中心</b> 官方授权销售代理商（2024.07–2027.07）</div>
-      <div class="it"><i></i><b>第五届深圳市退役军人创新创业大赛</b> 新兴产业赛道二等奖</div>
-      <div class="it"><i></i><b>三级等保</b> · 数据物理不出中心</div>
-      <div class="it"><i></i><b>五大国家级超算中心</b> 资源直连</div>
-      <a href="about.html#cred" class="more">查看证书 →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CTA ================= -->
-<section class="section tight">
-  <div class="w1560">
-    <div class="cta reveal">
-      <div class="cta-txt">
-        <h2>让算力，成为你的竞争力</h2>
-        <p>免费试用账号 · 一对一算力方案 · 按实际用量计费 · 配套官方算力证明</p>
-      </div>
-      <div class="cta-actions">
-        <a href="tel:13590152498" class="btn white">立即咨询 135 9015 2498</a>
-        <a href="about.html#contact" class="btn ghost-light">查看联系方式</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <div class="w1560">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <div class="fl"><img src="assets/img/logo_white.png" alt="天河智算"></div>
-        <p>深圳天河智算科技有限公司由国防科大超算、智算与人工智能团队组建，依托五大国家级超算中心资源，为 AI 时代提供超算 / 智算服务、私有大模型技术、产品及应用系统开发服务。</p>
-        <div class="slogan">梦 / 想 / 起 / 航 &nbsp;&nbsp; 携 / 手 / 共 / 赢</div>
-      </div>
-
-      <div class="footer-col">
-        <h4>算力产品</h4>
-        <ul>
-          <li><a href="product.html#gpu">GPU 智算集群</a></li>
-          <li><a href="product.html#cpu">CPU 计算节点</a></li>
-          <li><a href="supercomputing.html">深圳超算中心资源</a></li>
-          <li><a href="product.html#ws">液冷工作站</a></li>
-          <li><a href="product.html#storage">存储与网络</a></li>
-          <li><a href="product.html#billing">计费模式</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>解决方案</h4>
-        <ul>
-          <li><a href="solution.html#svc">软件系统定制</a></li>
-          <li><a href="solution.html#svc">应用性能优化</a></li>
-          <li><a href="solution.html#svc">超算云与 IT 开发</a></li>
-          <li><a href="solution.html#svc">运维与监控</a></li>
-          <li><a href="solution.html#scene">行业场景</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>关于我们</h4>
-        <ul>
-          <li><a href="about.html">公司简介</a></li>
-          <li><a href="about.html#cred">资质与荣誉</a></li>
-          <li><a href="cases.html">典型案例</a></li>
-          <li><a href="about.html#contact">联系我们</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col" style="flex:1.3">
-        <h4>联系我们</h4>
-        <div class="fs">
-          电话：135 9015 2498 / 139 7486 5556<br>
-          地址：深圳市龙华区民治街道大岭社区<br>
-          梅龙路与中梅路交汇处光浩国际中心 A 座 6-E
+      <div class="footer-bottom">
+        <span>© 2026 深圳天河智算科技有限公司 Shenzhen TianHeZhiSuan Technology Co., Ltd. 版权所有</span>
+        <div class="links">
+          <a href="index.html">首页</a>
+          <a href="product.html">算力产品</a>
+          <a href="supercomputing.html">超算资源</a>
+          <a href="solution.html">解决方案</a>
+          <a href="cases.html">典型案例</a>
+          <a href="about.html">关于我们</a>
         </div>
       </div>
     </div>
+  </footer>
 
-    <div class="footer-bottom">
-      <span>© 2026 深圳天河智算科技有限公司 Shenzhen TianHeZhiSuan Technology Co., Ltd. 版权所有</span>
-      <div class="links">
-        <a href="index.html">首页</a>
-        <a href="product.html">算力产品</a>
-        <a href="supercomputing.html">超算资源</a>
-        <a href="solution.html">解决方案</a>
-        <a href="cases.html">典型案例</a>
-        <a href="about.html">关于我们</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
