@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>算力产品清单 — H100 / A800 / A100 / CPU 节点 / 存储 | 天河智算</title>
+<meta name="description" content="天河智算算力产品清单：19 款企业级算力规格，覆盖 H100、A800、A100、H20、RTX 4090/5090 液冷工作站、Xeon CPU 节点、Lustre 与 Zocean 并行存储，支持按核时、按卡时、包节点与整机包月计费。">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="w1560">
+    <a href="index.html" class="logo">
+      <img class="logo-light" src="assets/img/logo_white.png" alt="天河智算 THZS">
+      <img class="logo-dark" src="assets/img/logo.png" alt="天河智算 THZS">
+    </a>
+
+    <ul class="nav1">
+      <li><a href="index.html">首页</a></li>
+      <li class="on" data-dropdown="product"><a href="product.html">算力产品 <span class="dropdown-arrow"></span></a></li>
+      <li data-dropdown="solution"><a href="solution.html">解决方案 <span class="dropdown-arrow"></span></a></li>
+      <li><a href="cases.html">典型案例</a></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+
+    <div class="header-actions">
+      <a href="about.html#contact" class="h_btn">联系我们</a>
+      <button class="nav-toggle" aria-label="打开菜单"><span></span></button>
+    </div>
+  </div>
+
+  <div class="product_down_bg" id="dropBg"></div>
+  <div class="newsPown" id="productDown">
+    <div class="w1560">
+      <div class="pown_col" style="width:24vw">
+        <div class="h1">算力产品</div>
+        <a href="product.html#gpu" class="pown_item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><rect x="7" y="9" width="4" height="4" rx="1"/><rect x="13" y="9" width="4" height="4" rx="1"/><path d="M7 19v2M17 19v2M7 3v2M17 3v2"/></svg></div>
+          <div class="txt"><b>GPU 智算集群</b><span>H100 / A800 / A100 / H20 / RTX 4090 · 5090</span></div>
+        </a>
+        <a href="product.html#cpu" class="pown_item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9zM4 10h-2M4 14h-2M22 10h-2M22 14h-2M10 4v-2M14 4v-2M10 22v-2M14 22v-2"/></svg></div>
+          <div class="txt"><b>CPU 计算节点</b><span>Platinum 8260 / 8358P 胖节点 · 按核时计费</span></div>
+        </a>
+        <a href="supercomputing.html" class="pown_item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><path d="M12 3l8 4v6c0 4.5-3.4 7.8-8 9-4.6-1.2-8-4.5-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div class="txt"><b>深圳超算中心资源</b><span>灵晟 E 级国产超算 · x86 工业计算分区</span></div>
+        </a>
+        <a href="product.html#storage" class="pown_item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+          <div class="txt"><b>存储与网络</b><span>Lustre / Zocean 并行存储 · RDMA 高速互联</span></div>
+        </a>
+      </div>
+
+      <div class="pown_col" style="width:22vw">
+        <div class="h1">按场景选型</div>
+        <div class="pown_links">
+          <a href="solution.html#scene"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><circle cx="8" cy="8" r="6"/><path d="M8 2v12M2 8h12"/></svg>大模型训练与微调</a>
+          <a href="solution.html#scene"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M2 12l4-5 3 3 5-7"/><path d="M2 14h12"/></svg>科学计算与工程仿真</a>
+          <a href="solution.html#scene"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><rect x="2" y="3" width="12" height="10" rx="1.5"/><path d="M2 6h12"/></svg>三维渲染与数字创意</a>
+          <a href="solution.html#scene"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M8 2l6 3v4c0 4-3 6-6 7-6-3-6-5-6-7V5z"/></svg>国产化适配与性能优化</a>
+        </div>
+      </div>
+
+      <div class="pown_col" style="width:16vw">
+        <div class="h1">服务支持</div>
+        <div class="pown_links">
+          <a href="product.html"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M3 3h10v10H3z"/><path d="M6 6h4M6 9h4"/></svg>算力产品清单</a>
+          <a href="solution.html"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M2 8h3l2-4 3 8 2-4h2"/></svg>技术服务明细</a>
+          <a href="about.html#cred"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><circle cx="8" cy="6" r="3.2"/><path d="M5.4 8.6L4 14l4-2 4 2-1.4-5.4"/></svg>资质与授权</a>
+        </div>
+      </div>
+
+      <div class="pown_banner">
+        <div class="k">COMPUTING POWER</div>
+        <div class="t">19 款企业级算力规格<br>按卡时 / 核时精细计费</div>
+        <a href="product.html" class="btn">查看清单</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="newsPown" id="solutionDown">
+    <div class="w1560">
+      <div class="pown_col" style="width:24vw">
+        <div class="h1">解决方案</div>
+        <a href="solution.html#svc" class="pown_item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><path d="M4 7h16M4 12h10M4 17h13"/><circle cx="18" cy="12" r="2"/></svg></div>
+          <div class="txt"><b>软件系统定制</b><span>量身定制技术框架，构建业务软件系统</span></div>
+        </a>
+        <a href="solution.html#svc" class="pown_item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><path d="M13 2L3 14h8l-1 8 10-12h-7z"/></svg></div>
+          <div class="txt"><b>应用性能优化</b><span>并行化算法设计与软件并行版本开发</span></div>
+        </a>
+        <a href="solution.html#svc" class="pown_item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><path d="M6 17a4 4 0 010-8 5 5 0 019.5-1.5A4 4 0 0118 17z"/><path d="M12 13v6M9 16l3 3 3-3"/></svg></div>
+          <div class="txt"><b>超算云与 IT 开发</b><span>云上完整 HPC 环境，前后台一体化开发</span></div>
+        </a>
+        <a href="solution.html#svc" class="pown_item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><path d="M3 12h4l2-5 4 10 2-5h6"/><circle cx="12" cy="12" r="9" stroke-dasharray="2 3"/></svg></div>
+          <div class="txt"><b>运维与监控</b><span>整机柜运维、作业监控、故障诊断与定位</span></div>
+        </a>
+      </div>
+
+      <div class="pown_col" style="width:18vw">
+        <div class="h1">技术服务</div>
+        <div class="pown_links">
+          <a href="solution.html#svc"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><rect x="2.5" y="3" width="11" height="10" rx="1.5"/><path d="M5 7l2 2-2 2M9 11h2"/></svg>软件环境搭建</a>
+          <a href="solution.html#svc"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M2 11h3l2-5 3 8 2-3h2"/></svg>作业监控</a>
+          <a href="solution.html#svc"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><circle cx="7" cy="7" r="4"/><path d="M10 10l4 4"/></svg>运行问题排查</a>
+          <a href="solution.html#svc"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M3 13V6l5-3 5 3v7"/><path d="M6.5 13v-3h3V13"/></svg>定制化平台</a>
+        </div>
+      </div>
+
+      <div class="pown_col" style="width:16vw">
+        <div class="h1">服务流程</div>
+        <div class="pown_links">
+          <a href="solution.html#flow"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><circle cx="3" cy="8" r="1.6"/><circle cx="8" cy="8" r="1.6"/><circle cx="13" cy="8" r="1.6"/></svg>需求沟通与方案</a>
+          <a href="solution.html#flow"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M3 13V3M3 13h10"/><path d="M3 10l4-4 3 3 3-4"/></svg>开通与环境迁移</a>
+          <a href="solution.html#flow"><svg viewBox="0 0 16 16" fill="none" stroke="#327DF9" stroke-width="1.6"><path d="M2 8a6 6 0 1112 0 6 6 0 01-12 0z"/><path d="M8 5v3l2 2"/></svg>运行与持续优化</a>
+        </div>
+      </div>
+
+      <div class="pown_banner">
+        <div class="k">FREE TRIAL</div>
+        <div class="t">免费试用账号<br>与一对一技术咨询</div>
+        <a href="tel:13974865556" class="btn">申请试用</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mm-close" aria-label="关闭">×</button>
+  <a href="index.html">首页 <span>HOME</span></a>
+  <a href="product.html">算力产品 <span>PRODUCTS</span></a>
+  <a href="supercomputing.html">深圳超算中心资源 <span>SZSC</span></a>
+  <a href="solution.html">解决方案 <span>SOLUTIONS</span></a>
+  <a href="cases.html">典型案例 <span>CASES</span></a>
+  <a href="about.html">关于我们 <span>ABOUT</span></a>
+  <a href="about.html#contact">联系我们 <span>CONTACT</span></a>
+  <div class="mm-foot">
+    <a href="tel:13590152498" class="btn blue" style="justify-content:center">获取算力报价</a>
+  </div>
+</div>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <div class="w1560">
+    <div class="crumb"><a href="index.html">首页</a> / 算力产品</div>
+    <h1>算力产品清单</h1>
+    <p class="lead">19 款企业级算力规格：企业级 A800 / H100 / A100 全高端 GPU 集群、x86 CPU 计算节点、液冷工作站、可视化云图站与并行存储。全部资源无超售、独占调度，支持按核时、按卡时、包节点与整机包月计费。</p>
+  </div>
+</section>
+
+<!-- ================= 产品清单 ================= -->
+<section class="section">
+  <div class="w1560">
+    <div class="filter-bar">
+      <button class="on" data-filter="all">全部规格</button>
+      <button data-filter="gpu">GPU 智算集群</button>
+      <button data-filter="cpu">CPU 计算节点</button>
+      <button data-filter="ws">液冷工作站</button>
+      <button data-filter="visual">可视化云图站</button>
+      <button data-filter="storage">存储</button>
+    </div>
+
+    <div class="tbl-wrap" id="gpu">
+      <table class="prod-table">
+        <thead>
+          <tr>
+            <th class="no">序号</th>
+            <th>产品 / 型号</th>
+            <th class="th-spec">配置</th>
+            <th>计费模式</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-cat="cpu" id="cpu">
+            <td class="no">01</td>
+            <td class="name">CPU 节点 / 3072G<small>X86-Intel Xeon Platinum 8260</small></td>
+            <td class="spec"><span>CPU：4× Intel Platinum 8260 2.4GHz 24Core</span><span>内存：3072GB DDR4</span><span>硬盘：2×480GB SSD · 2×7.68TB SSD · 4×3.84TB SSD</span></td>
+            <td class="bill"><span class="chip">按核时</span><span class="chip grey">包节点</span></td>
+          </tr>
+          <tr data-cat="cpu">
+            <td class="no">02</td>
+            <td class="name">CPU 节点 / 256G</td>
+            <td class="spec"><span>2 颗 Intel Xeon Platinum 8358P</span><span>单颗处理器 32 核 · 主频 2.6GHz</span></td>
+            <td class="bill"><span class="chip">按核时</span><span class="chip grey">包节点</span></td>
+          </tr>
+          <tr data-cat="cpu">
+            <td class="no">03</td>
+            <td class="name">X86-Intel Xeon Platinum 8358P<small>胖节点</small></td>
+            <td class="spec"><span>CPU：4× Intel Platinum 8260 2.4GHz 24Core</span><span>内存：3072GB DDR4</span><span>硬盘：2×480GB SSD · 2×7.68TB SSD · 4×3.84TB SSD</span></td>
+            <td class="bill"><span class="chip">按核时</span><span class="chip grey">包节点</span></td>
+          </tr>
+          <tr data-cat="cpu">
+            <td class="no">04</td>
+            <td class="name">CPU 节点 8358P</td>
+            <td class="spec"><span>2×32 物理核 2.6GHz Intel 志强铂金 X86</span><span>CPU 8358P ｜ 512GB 内存 ｜ 400G 自主高速互联</span></td>
+            <td class="bill"><span class="chip">按核时</span><span class="chip grey">包节点</span></td>
+          </tr>
+
+          <tr data-cat="gpu">
+            <td class="no">05</td>
+            <td class="name">A100 80G<small>四卡 GPU 节点</small></td>
+            <td class="spec"><span>CPU：2× Intel Xeon Platinum 8350C 2.60GHz 48MB 32C/64T 240W</span><span>内存：32×32GB DDR4 3200MHz ECC/REG</span><span>SSD：2×960GB SATA 6Gb 2.5 寸</span><span>GPU：4× NVIDIA A100 80GB</span><span>IB 网络：Mellanox HDR IB 200Gb/s</span></td>
+            <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
+          </tr>
+          <tr data-cat="gpu">
+            <td class="no">06</td>
+            <td class="name">A800 nvlink 80G<small>4 卡整机</small></td>
+            <td class="spec"><span>CPU：2 颗 Intel Xeon Platinum 8358P，单颗 32 核、主频 2.6GHz</span><span>内存：1024GB DDR4</span><span>硬盘：2×480GB SSD · 4×3.84TB SSD</span><span>网络：200Gb/s RoCE 高速网卡</span></td>
+            <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
+          </tr>
+          <tr data-cat="gpu">
+            <td class="no">07</td>
+            <td class="name">标准型 A800 GPU 集群<small>A800 Pcie 80G</small></td>
+            <td class="spec"><span>2×28 物理核 2.6GHz Intel 志强金牌</span><span>CPU 1024GB 内存 ｜ 8× Nvidia A800 80G 显存</span><span>Pcie 互联 ｜ 超算 Lustre 高性能分布式存储按需分配，全局总容量不低于 1PB</span></td>
+            <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
+          </tr>
+          <tr data-cat="gpu">
+            <td class="no">08</td>
+            <td class="name">H100 GPU 集群<small>H100 Nvlink 80G</small></td>
+            <td class="spec"><span>2×32 物理核 2.8GHz Intel 至强 8462Y+ CPU ｜ 2048GB 内存</span><span>8× Nvidia H100 80G 显存 Nvlink</span><span>超算 Lustre 高性能分布式存储按需分配，全局总容量不低于 1PB</span></td>
+            <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
+          </tr>
+          <tr data-cat="gpu">
+            <td class="no">09</td>
+            <td class="name">A100 八卡智算云服务器<small>8 卡整机 · vGPU 共享</small></td>
+            <td class="spec"><span>每台 GPU 云服务器配置 8 张智算卡</span><span>单卡 80GB：TF32=156 TFLOPS，FP16=312 TFLOPS（不支持 FP8）</span><span>卡间互联带宽 600GB/s；支持容器间 vGPU 共享与算力强隔离</span><span>内网带宽 96Gbps；128 核 vCPU + 2048GB 内存</span><span>3.84TB 本地 SSD 硬盘 4 块</span></td>
+            <td class="bill"><span class="chip grey">整机包月</span></td>
+          </tr>
+          <tr data-cat="gpu">
+            <td class="no">10</td>
+            <td class="name">高端型 A100 GPU 集群<small>A100 Nvlink 80G</small></td>
+            <td class="spec"><span>2×32 物理核 2.1GHz Intel 志强金牌</span><span>CPU 1024GB 内存 ｜ 8× Nvidia A100 80G 显存</span><span>Nvlink ｜ 超算 Lustre 高性能分布式存储按需分配，全局总容量不低于 1PB</span></td>
+            <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
+          </tr>
+          <tr data-cat="gpu">
+            <td class="no">11</td>
+            <td class="name">标准型 V100 GPU 集群<small>V100 Pcie</small></td>
+            <td class="spec"><span>Pcie 互联</span><span>超算 Lustre 高性能分布式存储容量按需分配</span></td>
+            <td class="bill"><span class="chip">按卡时</span><span class="chip grey">整机包月</span></td>
+          </tr>
+          <tr data-cat="gpu">
+            <td class="no">12</td>
+            <td class="name">H20 nvlink 接口<small>8 卡整机 · vGPU 共享</small></td>
+            <td class="spec"><span>每台配置 8 张智算卡，单卡 96GB：TF32=74 TFLOPS，FP16=148 TFLOPS，FP8=296 TFLOPS</span><span>卡间互联带宽 900GB/s；最高包转发率 3600 万 pps</span><span>内网带宽 100Gbps；192 核 vCPU + 2048GB 内存</span><span>3.84TB 本地 SSD 硬盘 4 块</span></td>
+            <td class="bill"><span class="chip grey">整机包月</span></td>
+          </tr>
+
+          <tr data-cat="ws" id="ws">
+            <td class="no">13</td>
+            <td class="name">4090 - 液冷 10 卡<small>Intel 8473C · PCIe 5.0</small></td>
+            <td class="spec"><span>CPU：2× 第四代英特尔 至强 8473C，52 核 104 线程，2.1 满载 3.1 睿频 3.8</span><span>内存：16×64GB DDR5 共 1TB；系统盘 2×960GB SATA（RAID1）；数据盘 1×7.68TB U.2</span><span>网卡：25Gb 双网口；电源：CRPS 3200W 热拔插（2+2 冗余）</span><span>GPU：10× RTX 4090 24GB（16× 全速）；主板支持 PCIE 5.0</span></td>
+            <td class="bill"><span class="chip grey">整机包月</span></td>
+          </tr>
+          <tr data-cat="ws">
+            <td class="no">14</td>
+            <td class="name">5090 - 液冷 8 卡<small>Intel 8473C · PCIe 5.0</small></td>
+            <td class="spec"><span>CPU：2× 英特尔 8473C 52 核 104 线程（2.1 满载 3.1 睿频 3.8）</span><span>内存：16×64GB DDR5 共 1TB；系统盘 2×960GB SATA（RAID1）</span><span>数据盘 7.68TB×2（选配最多 4 块）；网卡 400G×1 + 100G×2，PCIe 5.0 Switch×1</span><span>电源：CRPS 3200W 热拔插（2+2 冗余）；GPU：8× RTX 5090（16× 全速）</span></td>
+            <td class="bill"><span class="chip grey">整机包月</span></td>
+          </tr>
+          <tr data-cat="ws">
+            <td class="no">15</td>
+            <td class="name">5880 - 液冷 8 卡<small>可加 vGPU 授权</small></td>
+            <td class="spec"><span>CPU：2× 英特尔 8473C 52 核 104 线程（2.1 满载 3.1 睿频 3.8）</span><span>内存：16×64GB DDR5 共 1TB；系统盘 2×960GB SATA（RAID1）</span><span>数据盘 7.68TB×2（选配最多 4 块）；网卡 200G×1 + 100G×2，PCIe 4.0 Switch×1</span><span>电源：CRPS 3200W 热拔插（1+1 冗余）；GPU：8× RTX 5880（16× 全速，可加 vGPU 授权）</span></td>
+            <td class="bill"><span class="chip grey">整机包月</span></td>
+          </tr>
+
+          <tr data-cat="visual">
+            <td class="no">16</td>
+            <td class="name">标准型可视化 GPU 云图站</td>
+            <td class="spec"><span>核数：12 vCPU ｜ 内存：52GB ｜ 存储：200G</span><span>显卡：GeForce RTX 3090+1 ｜ 双算力加速低延时云</span><span>超算 Zocean 高性能分布式存储容量按需分配，全局可分配容量不低于 500TB</span></td>
+            <td class="bill"><span class="chip grey">整机包月</span></td>
+          </tr>
+          <tr data-cat="storage" id="storage">
+            <td class="no">17</td>
+            <td class="name">Zocean 高性能分布式存储</td>
+            <td class="spec"><span>可视化专用 SSD 存续</span><span>按需分配容量，适配云图站与可视化业务</span></td>
+            <td class="bill"><span class="chip grey">整机包月</span></td>
+          </tr>
+          <tr data-cat="storage">
+            <td class="no">18</td>
+            <td class="name">高性能分布式存储</td>
+            <td class="spec"><span>Lustre 并行文件系统</span><span>高带宽、高 IOPS，适配大模型训练与海量数据读写</span></td>
+            <td class="bill"><span class="chip grey">整机包月</span></td>
+          </tr>
+          <tr data-cat="visual">
+            <td class="no">19</td>
+            <td class="name">高端型可视化 GPU 云图站</td>
+            <td class="spec"><span>核数：12 vCPU ｜ 内存：52GB ｜ 存储：200G</span><span>显卡：GeForce RTX 3090+1 ｜ 双算力加速低延时云</span><span>超算 Zocean 高性能分布式存储容量按需分配，全局可分配容量不低于 500TB</span></td>
+            <td class="bill"><span class="chip grey">整机包月</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tbl-tip">* 以上配置来自当前可用资源清单，实际交付以合同与技术方案确认的规格为准；集群存储容量按需分配，全局总容量不低于标注值。</p>
+  </div>
+</section>
+
+<!-- ================= 计费模式 ================= -->
+<section class="section light" id="billing">
+  <div class="w1560">
+    <div class="sec-head">
+      <div class="sec-eyebrow">Billing Models</div>
+      <div class="title"><span>四种计费模式</span></div>
+      <p class="sec-desc">按实际用量付费，不为闲置资源买单；资源紧张时还可先提交作业排队，无需先行抢占节点。</p>
+    </div>
+
+    <div class="grid-4">
+      <article class="svc-card card reveal">
+        <div class="top"><div class="ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg></div><h3>按核时</h3></div>
+        <p>CPU 节点按实际核时计量，适合科学计算、仿真与批量作业。</p>
+        <div class="price"><em>CPU 节点</em><span>作业级计量</span></div>
+      </article>
+      <article class="svc-card card reveal">
+        <div class="top"><div class="ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h4v4h-4zM13 9h4v4h-4z"/></svg></div><h3>按卡时</h3></div>
+        <p>GPU 按作业实际运行量计费，提交即计量，杜绝资源浪费。</p>
+        <div class="price"><em>GPU 集群</em><span>细粒度计量</span></div>
+      </article>
+      <article class="svc-card card reveal">
+        <div class="top"><div class="ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg></div><h3>包节点</h3></div>
+        <p>整节点长期独占，硬件确定性最高，适合 7×24 小时持续运行。</p>
+        <div class="price"><em>CPU / GPU</em><span>独占资源</span></div>
+      </article>
+      <article class="svc-card card reveal">
+        <div class="top"><div class="ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="#327DF9" stroke-width="1.8"><path d="M3 20V8l6-4 6 4v12"/><path d="M15 20v-8l6 3v5"/><path d="M2 20h20"/></svg></div><h3>整机包月 / 包年</h3></div>
+        <p>整机按月或按年锁定，适合训练、渲染与长周期科研项目。</p>
+        <div class="price"><em>整机</em><span>长周期更省</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 存储与网络 ================= -->
+<section class="section">
+  <div class="w1560">
+    <div class="sec-head">
+      <div class="sec-eyebrow">Storage &amp; Network</div>
+      <div class="title"><span>存储与网络，不额外收费</span></div>
+      <p class="sec-desc">大模型训练真正的瓶颈往往不在 GPU，而在存储带宽与节点间通信——这部分我们按超算标准建设，并对客户开放。</p>
+    </div>
+
+    <div class="grid-3">
+      <article class="adv-card card reveal">
+        <div class="num-mark">01</div>
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+        <h3>Lustre / Zocean 并行存储</h3>
+        <p>高带宽、高 IOPS 的并行文件系统，支撑大模型训练的海量样本读取与检查点写入；全局容量按需分配，不低于 1PB。</p>
+        <div class="tags"><span class="chip">≥1PB 池化容量</span><span class="chip">高 IOPS</span></div>
+      </article>
+      <article class="adv-card card reveal">
+        <div class="num-mark">02</div>
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 11l10-4M7 13l10 4"/></svg></div>
+        <h3>RDMA / RoCE 200G 高速互联</h3>
+        <p>节点间高速互联，Mellanox HDR IB 200Gb/s 与 RoCE 200Gb/s 网络，封闭算力网络保障多机通信稳定。</p>
+        <div class="tags"><span class="chip">IB / RoCE 200G</span><span class="chip">多机并行</span></div>
+      </article>
+      <article class="adv-card card reveal">
+        <div class="num-mark">03</div>
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M4 20l4-7 3 3 5-9"/><path d="M2 22h20"/><path d="M16 7h4v4"/></svg></div>
+        <h3>免费 1TB 起 + 数据导入协助</h3>
+        <p>免费提供 1TB 存储空间；海量历史数据可协助邮寄硬盘挂盘导入，避免长时间公网上传占用项目周期。</p>
+        <div class="tags"><span class="chip green">免费 1TB</span><span class="chip green">硬盘挂盘导入</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="section tight">
+  <div class="w1560">
+    <div class="cta reveal">
+      <div class="cta-txt">
+        <h2>把需求告诉我们，48 小时内给出配置与报价</h2>
+        <p>模型参数量 · 训练轮次 · 软件清单 · 任务周期，四项信息即可完成选型。</p>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:13590152498" class="btn white">立即咨询 135 9015 2498</a>
+        <a href="solution.html" class="btn ghost-light">了解服务方案</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="w1560">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="fl"><img src="assets/img/logo_white.png" alt="天河智算"></div>
+        <p>深圳天河智算科技有限公司由国防科大超算、智算与人工智能团队组建，依托五大国家级超算中心资源，为 AI 时代提供超算 / 智算服务、私有大模型技术、产品及应用系统开发服务。</p>
+        <div class="slogan">梦 / 想 / 起 / 航 &nbsp;&nbsp; 携 / 手 / 共 / 赢</div>
+      </div>
+      <div class="footer-col">
+        <h4>算力产品</h4>
+        <ul>
+          <li><a href="product.html#gpu">GPU 智算集群</a></li>
+          <li><a href="product.html#cpu">CPU 计算节点</a></li>
+          <li><a href="supercomputing.html">深圳超算中心资源</a></li>
+          <li><a href="product.html#storage">存储与网络</a></li>
+          <li><a href="product.html#billing">计费模式</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>解决方案</h4>
+        <ul>
+          <li><a href="solution.html#svc">软件系统定制</a></li>
+          <li><a href="solution.html#svc">应用性能优化</a></li>
+          <li><a href="solution.html#svc">超算云与 IT 开发</a></li>
+          <li><a href="solution.html#svc">运维与监控</a></li>
+          <li><a href="solution.html#scene">行业场景</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="about.html">公司简介</a></li>
+          <li><a href="about.html#cred">资质与荣誉</a></li>
+          <li><a href="cases.html">典型案例</a></li>
+          <li><a href="about.html#contact">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" style="flex:1.3">
+        <h4>联系我们</h4>
+        <div class="fs">
+          电话：135 9015 2498 / 139 7486 5556<br>
+          地址：深圳市龙华区民治街道大岭社区<br>
+          梅龙路与中梅路交汇处光浩国际中心 A 座 6-E
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 深圳天河智算科技有限公司 Shenzhen TianHeZhiSuan Technology Co., Ltd. 版权所有</span>
+      <div class="links">
+        <a href="index.html">首页</a>
+        <a href="product.html">算力产品</a>
+        <a href="solution.html">解决方案</a>
+        <a href="about.html">关于我们</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
