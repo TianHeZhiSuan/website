@@ -459,7 +459,8 @@ body {
 .cred-card { background: #fff; border-radius: var(--sd-radius-card); box-shadow: var(--sd-shadow-card); overflow: hidden; height: auto; display: flex; flex-direction: column; transition: var(--sd-transition); }
 .cred-card:hover { box-shadow: var(--sd-shadow-hover); transform: translateY(-6px); }
 .cred-card .img { height: 17rem; background: #F4F6FA; display: flex; align-items: center; justify-content: center; padding: .8rem; }
-.cred-card .img img { max-height: 100%; width: auto; object-fit: contain; }
+.cred-card .img img { max-height: 100%; max-width: 100%; width: auto; object-fit: contain; }
+.cred-card .img.doc img { box-shadow: 0 0 0 1px rgba(37,102,210,.12), 0 2px 8px rgba(23,43,77,.06); border-radius: 3px; }
 .cred-card .cap { padding: 1.1rem 1.3rem 1.3rem; }
 .cred-card .cap h3 { font-size: .95rem; font-weight: 600; color: var(--sd-text-primary); margin-bottom: .35rem; }
 .cred-card .cap p { font-size: .73rem; color: var(--sd-text-muted); line-height: 1.8; }
