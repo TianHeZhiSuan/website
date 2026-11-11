@@ -489,7 +489,7 @@ body {
 /* ---------- 13. Page hero (sub pages) ---------- */
 .page-hero {
   position: relative; overflow: hidden; color: #fff;
-  padding: 8.4rem 0 3.6rem;
+  padding: 6rem 0 3rem;
   background:
     radial-gradient(900px 420px at 80% 0%, rgba(255,255,255,.22), transparent 60%),
     linear-gradient(140deg, #2A5DCB, #3A79E9 55%, #4A87F0);
@@ -931,10 +931,50 @@ body {
 .article-back { display: inline-flex; align-items: center; gap: .35rem; margin-top: 2rem; font-size: .82rem; font-weight: 600; color: var(--sd-primary); }
 .article-back::before { content: "\2190"; }
 
+/* 详情页 · 内容层次增强 */
+.article-lead {
+  font-size: 1rem; line-height: 2; color: var(--sd-text-primary);
+  background: rgba(50,125,249,.05); border-left: 3px solid var(--sd-primary);
+  border-radius: .5rem; padding: .95rem 1.1rem; margin: 0 0 1.5rem; text-align: justify;
+}
+.article-lead strong { color: var(--sd-primary); }
+.article-subtitle {
+  display: flex; align-items: center; gap: .55rem;
+  font-size: 1.12rem; font-weight: 700; color: var(--sd-text-primary);
+  margin: 1.9rem 0 .9rem;
+}
+.article-subtitle::before {
+  content: ""; width: 4px; height: 1.05rem; border-radius: 2px;
+  background: var(--sd-primary); display: inline-block;
+}
+.article-body strong { color: var(--sd-text-primary); font-weight: 700; }
+.article-keypoints {
+  background: linear-gradient(135deg, rgba(50,125,249,.07), rgba(50,125,249,.03));
+  border: 1px solid rgba(50,125,249,.18); border-radius: .8rem;
+  padding: 1.2rem 1.3rem; margin: 1.7rem 0;
+}
+.article-keypoints .kp-title {
+  display: flex; align-items: center; gap: .5rem;
+  font-size: .92rem; font-weight: 700; color: var(--sd-primary); margin-bottom: .85rem;
+}
+.article-keypoints .kp-title::before { content: "\2605"; font-size: .95rem; }
+.article-keypoints ul { list-style: none; margin: 0; padding: 0; }
+.article-keypoints li {
+  position: relative; padding-left: 1.5rem; margin-bottom: .7rem;
+  font-size: .9rem; line-height: 1.85; color: var(--sd-text-body); text-align: justify;
+}
+.article-keypoints li:last-child { margin-bottom: 0; }
+.article-keypoints li::before {
+  content: "\2713"; position: absolute; left: 0; top: 0;
+  color: var(--sd-primary); font-weight: 700;
+}
+
 @media (max-width: 767px) {
   .news-item { flex-direction: column; gap: .9rem; }
   .news-thumb { width: 100%; flex-basis: auto; height: 12rem; }
   .article-title { font-size: 1.4rem; }
   .article-gallery { grid-template-columns: 1fr; }
   .article-gallery img { height: 11rem; }
+  .article-lead { font-size: .92rem; padding: .85rem 1rem; }
+  .article-keypoints { padding: 1rem; }
 }
