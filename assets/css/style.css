@@ -978,3 +978,52 @@ body {
   .article-lead { font-size: .92rem; padding: .85rem 1rem; }
   .article-keypoints { padding: 1rem; }
 }
+
+/* ---------- 21. Lightbox 灯箱（通用，全站可复用） ---------- */
+[data-lightbox] { cursor: zoom-in; }
+.lb-overlay {
+  position: fixed; inset: 0; z-index: 9999;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(15, 23, 42, .9); padding: 4vh 5vw; cursor: zoom-out;
+  opacity: 0; visibility: hidden;
+  transition: opacity .3s ease, visibility .3s ease;
+}
+.lb-overlay.is-open { opacity: 1; visibility: visible; }
+.lb-overlay img {
+  max-width: 92vw; max-height: 86vh; object-fit: contain;
+  border-radius: .6rem; box-shadow: 0 24px 70px rgba(0, 0, 0, .55);
+  transform: scale(.96); transition: transform .3s ease; user-select: none; -webkit-user-drag: none;
+}
+.lb-overlay.is-open img { transform: scale(1); }
+.lb-close {
+  position: absolute; top: 1.3rem; right: 1.5rem; z-index: 2;
+  width: 2.7rem; height: 2.7rem; border: none; border-radius: 50%;
+  background: rgba(255, 255, 255, .14); color: #fff; font-size: 1.6rem; line-height: 1;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: background .2s ease;
+}
+.lb-close:hover { background: rgba(255, 255, 255, .28); }
+.lb-nav {
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
+  width: 3rem; height: 3rem; border: none; border-radius: 50%;
+  background: rgba(255, 255, 255, .14); color: #fff; font-size: 1.8rem; line-height: 1;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: background .2s ease;
+}
+.lb-nav:hover { background: rgba(255, 255, 255, .28); }
+.lb-prev { left: 1.5rem; }
+.lb-next { right: 1.5rem; }
+.lb-caption {
+  position: absolute; bottom: 1.4rem; left: 0; right: 0; z-index: 2;
+  text-align: center; color: rgba(255, 255, 255, .85); font-size: .85rem; padding: 0 1rem;
+}
+@media (max-width: 767px) {
+  .lb-nav { width: 2.4rem; height: 2.4rem; font-size: 1.4rem; }
+  .lb-prev { left: .6rem; }
+  .lb-next { right: .6rem; }
+  .lb-overlay img { max-height: 80vh; }
+  .lb-close { top: .9rem; right: .9rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lb-overlay, .lb-overlay img { transition: none; }
+}
